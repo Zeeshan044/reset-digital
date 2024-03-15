@@ -1,0 +1,40 @@
+import React from "react";
+import discoverImg from "@/assets/images/discover.png"
+import Image from "next/image";
+const DiscoveryStore = () => {
+    return (
+        <div className=" px-[249px] py-[112px]">
+            <div className=" text-[#111111] dark:text-primary-grey font-light flex justify-between mb-12">
+                <div className=" w-[397px]">
+                    <h5 className="text-xs ">GET TO KNOW</h5>
+                    <p className=" text-base mt-4">TWelcome to Reset Digital, your dedicated partnerin web design and digital transformation. At the intersection of creativity and purpose, we bring ideas to life with a focus on showcasing unique features and enhancing visibility. What sets us apart is our client-centric approach – at Reset Digital, your vision is our priority. Join us on a journey where innovation meets purpose, and let's craft digital brilliance together.</p>
+                </div>
+                <div>
+                    <h2 className="text-[50px] font-medium pl-[60px] ">Discover <i className=" text-primary-dark font-thin">Our
+                        Story</i></h2>
+                </div>
+            </div>
+            <div className="flex justify-between gap-10">
+                <Image src={discoverImg} alt="" className=" rounded-[20px]" />
+                <div className=" font-light text-base text-[#111111] dark:text-primary-grey gap-[26px] ">
+                    <p className=" mb-[26px]">Founded in 2024, Reset Digital was born out of a shared love
+                        for design, technology, and the limitless possibilities of the
+                        web.</p>
+                    <p className=" mb-[26px]">We started as a small group of individuals who believed in
+                        the power of the internet to shape businesses and create
+                        meaningful online experiences.</p>
+                    <p className=" mb-[26px]">
+                        From our humble beginnings in a cozy office space, we've
+                        grown into a dynamic and highly skilled team of experts,
+                        united by the common goal of making the web a better place,
+                        one pixel at a time.
+                    </p>
+                    <p className="">Our dedication to quality, innovation, and collaboration has
+                        been the driving force behind our success.</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default DiscoveryStore;
