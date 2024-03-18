@@ -1,0 +1,30 @@
+import React from "react";
+import Touch1 from "@/assets/images/touch1.png"
+import Touch2 from "@/assets/images/touch2.png"
+import Touch3 from "@/assets/images/touch3.png"
+import Image from "next/image";
+
+const GetInTouchABout = () => {
+    return (
+        <div className="px-[166px] pt-[112px] pb-[80px] text-white ">
+            <div className=" flex bg-[#292D32] rounded-[30px] h-[500px]">
+                <div className="  px-[68px] pt-[70px]  flex flex-col items-center relative overflow-hidden w-[452px]">
+                    <h5 className=" text-secondary-light text-xs font-light ">Get In Touch</h5>
+                    <h2 className=" text-[50px] font-medium text-center">Let's Start
+                        <i className=" font-thin text-primary-dark -mt-5"> Your Project</i></h2>
+                    <p className=" text-base font-light text-center ">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Vestibulum convallis.</p>
+                    <a href="" className=" bg-primary-dark py-3 px-6 rounded-full mt-8 text-black">Get In Touch</a>
+                </div>
+                <div className="h-[500px] relative overflow-hidden">
+                    <Image src={Touch3} alt="" className=" h-[50%]" />
+                    <Image src={Touch2} alt="" className="absolute inset-0 h-[50%] left-14 top-20" />
+                    <Image src={Touch1} alt="" className="absolute inset-0 h-[50%] w-full top-40 left-32 right-0" />
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default GetInTouchABout;

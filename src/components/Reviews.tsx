@@ -3,7 +3,7 @@ import profile from "@/assets/images/profile.png"
 import Image from "next/image";
 const Reviews = () => {
     return (
-        <div className="px-[253px] pt-[112px] pb-[23px] dark:text-white ">
+        <div className="px-[125px] pt-[112px] pb-[23px] dark:text-white ">
             <div>
                 <div className=" flex flex-col items-center justify-center gap-y-4 mb-12">
                     <h5 className=" text-xs font-light tracking-widest">TESTIMONIALS</h5>
@@ -24,10 +24,10 @@ const Reviews = () => {
                         <h6 className=" text-[10px] text-primary-dark tracking-widest">Client Review</h6>
                     </div>
                     <div className="flex items-center px-[34px] h-[300px]  bg-[#292D32] mr-[6px] rounded-[10px]">
-                        <button className=" text-[25px] font-light">+</button>
+                        <button className=" text-[25px] font-light text-white">+</button>
                     </div>
                     <div className="flex items-center h-[300px] px-[22px] bg-[#292D32] rounded-[10px]">
-                        <button className=" text-[25px] font-light">+</button>
+                        <button className=" text-[25px] font-light text-white">+</button>
                     </div>
                 </div>
 

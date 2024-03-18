@@ -7,11 +7,10 @@ import Skill from "@/assets/images/skills.png"
 import Bar from "@/assets/images/bar.png"
 
 import Image from "next/image";
-import { skip } from "node:test";
 
 const Skills = () => {
     return (
-        <div className=" pl-[173px] pr-[249px] pt-[112px] pb-[43px] dark:text-white">
+        <div className=" pl-[173px] pr-[249px] dark:text-white pt-[112px] pb-[66px]">
             <div className=" pl-[100px] pr-[50px] flex justify-between">
                 <div className=" w-[224px] font-light">
                     <h5 className=" text-xs  dark:text-[#F5F5F5] mb-4 tracking-widest">Get To Know</h5>

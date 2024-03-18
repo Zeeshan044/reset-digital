@@ -12,13 +12,14 @@ const config: Config = {
       colors: {
         primary: {
           dark: "#82E8F2",
-          light: "#ffffff",
           btn: "#786DFF4D",
           grey: "#D0D0D0",
         },
         secondary: {
           dark: "#1D2025",
           light: "#F5F5F5",
+          cold: "#111111",
+          box: "#292D32",
         },
       },
       backgroundImage: {

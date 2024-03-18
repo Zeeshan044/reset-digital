@@ -2,12 +2,14 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import AboutHero from "@/components/AboutHero";
 import Trusted from "@/components/Trusted";
-import DiscoveryStory from "@/components/DiscoveryStory";
+import DiscoveryStory from "@/components/DiscoverStory";
 import Skills from "@/components/Skills";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
-import OurValues from "@/components/OurValues";
-import AbotVAlues from "@/components/AboutVAlues";
+import AbotVAlues from "@/components/AboutValues";
+import StartProject from "@/components/StartProject";
+import GetInTouchABout from "@/components/GetInTouchABout";
+import OurTeam from "@/components/OurTeam";
 
 const About = () => {
   return (
@@ -17,9 +19,11 @@ const About = () => {
         <AboutHero />
         <Trusted />
         <DiscoveryStory />
+        <OurTeam />
         <AbotVAlues />
         <Skills />
         <Reviews />
+        <GetInTouchABout />
         <Footer />
       </div>
     </main>

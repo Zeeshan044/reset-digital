@@ -11,7 +11,7 @@ const Trusted = () => {
             <div className="flex justify-between mb-[54px]">
                 <h2 className="text-[50px] font-medium mt-14">Trusted by <i className="text-primary-dark font-thin">Great Brands</i></h2>
                 <div className="font-light w-[331px]">
-                    <h2 className="text-xs tracking-widest">our clients</h2>
+                    <h2 className="text-xs tracking-widest">OUR CLIENTS</h2>
                     <p className="text-base mt-4">The client is paramount, and we prioritize dedicated support for our clients. Welcome to the forefront of exceptional service at Reset Digital.</p>
                 </div>
             </div>
@@ -27,6 +27,6 @@ const Trusted = () => {
             </div>
         </div>
     ); 
-};                                  
+};                                 
   
 export default Trusted;

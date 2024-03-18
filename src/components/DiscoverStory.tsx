@@ -3,11 +3,11 @@ import discoverImg from "@/assets/images/discover.png"
 import Image from "next/image";
 const DiscoveryStore = () => {
     return (
-        <div className=" px-[249px] py-[112px]">
+        <div className=" px-[249px] pb-[112px]">
             <div className=" text-[#111111] dark:text-primary-grey font-light flex justify-between mb-12">
                 <div className=" w-[397px]">
                     <h5 className="text-xs ">GET TO KNOW</h5>
-                    <p className=" text-base mt-4">TWelcome to Reset Digital, your dedicated partnerin web design and digital transformation. At the intersection of creativity and purpose, we bring ideas to life with a focus on showcasing unique features and enhancing visibility. What sets us apart is our client-centric approach – at Reset Digital, your vision is our priority. Join us on a journey where innovation meets purpose, and let's craft digital brilliance together.</p>
+                    <p className=" text-base mt-4">Welcome to Reset Digital, your dedicated partnerin web design and digital transformation. At the intersection of creativity and purpose, we bring ideas to life with a focus on showcasing unique features and enhancing visibility. What sets us apart is our client-centric approach – at Reset Digital, your vision is our priority. Join us on a journey where innovation meets purpose, and let's craft digital brilliance together.</p>
                 </div>
                 <div>
                     <h2 className="text-[50px] font-medium pl-[60px] ">Discover <i className=" text-primary-dark font-thin">Our

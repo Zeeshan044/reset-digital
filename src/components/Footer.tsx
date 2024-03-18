@@ -13,13 +13,13 @@ const Footer = () => {
                     <p className=" font-semibold text-base mb-[17px] dark:text-white">RESET DIGITAL</p>
                     <p className=" text-[#111111] text-base font-light mb-3 dark:text-primary-grey">Where Creativity Meets Innovation.</p>
                     <div className=" flex gap-8">
-                        <Image src={facebook} alt="" />
-                        <Image src={insta} alt="" />
-                        <Image src={twitter} alt="" />
-                        <Image src={youtube} alt="" />
+                        <Image src={facebook} alt="" className="bg-black dark:bg-none" />
+                        <Image src={insta} alt="" className="bg-black dark:bg-none" />
+                        <Image src={twitter} alt="" className="bg-black dark:bg-none" />
+                        <Image src={youtube} alt="" className="bg-black dark:bg-none" />
                     </div>
                 </div>
-                <div className=" grid grid-cols-3 dark:text-primary-grey">
+                <div className=" grid grid-cols-3 dark:text-white">
                     <div className=" opensans gap-y-[10px] w-[215px]">
                         <p className="text-4 font-normal mb-[10px]">Main</p>
                         <p className=" text-[15px] font-light mb-3">Home</p>
@@ -50,7 +50,10 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="bg-[#786DFF4D]/30 w-full mt-10" />
-            <p className=" text-[15px] font-light pb-[71px] mt-10 dark:text-white">© 2024 Reset Digital. All Rights Reserved.</p>
+            <div className="text-[15px] font-light pb-[71px] mt-10 dark:text-[#B3B3B3] flex justify-between">
+                <p className=" ">© 2024 Reset Digital. All Rights Reserved.</p>
+                <p>Built by Yusuf Abdi</p>
+            </div>
         </div>
     );
 };
