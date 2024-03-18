@@ -4,9 +4,9 @@ import Image from "next/image";
 import foundation from "@/assets/images/foundation.png";
 const Foundation = () => {
     return (
-        <div className={` border w-full border-black py-5 border-x-0 dark:text-white`}>
+        <div className={` border w-full border-black pb-6 pt-8 border-x-0 dark:text-white`}>
             <div className="max-w-[1273px] pl-[141px] pr-[20px] ">
-                <div className="flex justify-between gap-4 items-center">
+                <div className="flex justify-between gap-4 items-center mb-8">
                     <div className=" flex gap-3 px-[131px] items-center justify-center">
                         <Image src={Vector} alt="" width={64} height={64} className="p-[10px]" />
                         <p className=" text-base font-light">START</p>

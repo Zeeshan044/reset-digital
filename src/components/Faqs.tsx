@@ -89,7 +89,7 @@ const Faqs = () => {
             </div>
             <div>
                 <div className="  flex flex-col items-center mt-[70px]">
-                    <h5 className=" text-xs font-light mb-4">our blog</h5>
+                    <h5 className=" text-xs font-light mb-4 tracking-widest">OUR BLOG</h5>
                     <h2 className=" text-primary-dark mb-7 dark:text-white text-[50px] font-medium">Posts <i className="text-[#111111] font-thin"> & Articles</i></h2>
                     <p className=" text-[#111111] text-base font-light mb-[62px]">Web design Post</p>
                 </div>
@@ -101,11 +101,11 @@ const Faqs = () => {
                             <div className=" text-base font-light flex items-center">
                                 <Image src={avatar} alt="avtar" className=" w-[18px] h-[18px]" />
                                 <p className=" ml-2 mr-[17px] dark:text-primary-dark">John Doe</p>
-                                <p>Oct 28</p>
+                                <p className=" text-secondary-cold dark:text-primary-grey">Oct 28</p>
                             </div>
                         </div>
-                        <h4 className=" font-medium text-[32px] mb-4">World Through Creativity</h4>
-                        <p className=" text-base font-light dark:text-primary-grey mb-6">Design is the force behind the transformation of ideas.</p>
+                        <h4 className=" font-medium text-[32px] mb-4 text-secondary-dark dark:text-secondary-light">World Through Creativity</h4>
+                        <p className=" text-base font-light dark:text-primary-grey text-secondary-cold mb-6">Design is the force behind the transformation of ideas.</p>
                     </div>
                     <div>
                         <Image src={post2} alt="post1" className=" rounded-[30px]" />
@@ -114,11 +114,11 @@ const Faqs = () => {
                             <div className=" text-base font-light flex items-center">
                                 <Image src={avatar} alt="avtar" className=" w-[18px] h-[18px]" />
                                 <p className=" ml-2 mr-[17px] dark:text-primary-dark">John Doe</p>
-                                <p>Oct 28</p>
+                                <p className=" text-secondary-cold dark:text-primary-grey">Oct 28</p>
                             </div>
                         </div>
-                        <h4 className=" font-medium text-[32px] mb-4">From Pencil to Pixel</h4>
-                        <p className=" text-base font-light dark:text-primary-grey mb-6">Captivating narrative that reflects the ever-changing landscape of creativity.</p>
+                        <h4 className=" font-medium text-[32px] mb-4 text-secondary-dark dark:text-secondary-light">From Pencil to Pixel</h4>
+                        <p className=" text-base font-light dark:text-primary-grey text-secondary-cold mb-6">Captivating narrative that reflects the ever-changing landscape of creativity.</p>
                     </div>
                 </div>
             </div>
