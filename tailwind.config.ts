@@ -14,6 +14,7 @@ const config: Config = {
           dark: "#82E8F2",
           btn: "#786DFF4D",
           grey: "#D0D0D0",
+          faq: "#111A21",
         },
         secondary: {
           dark: "#1D2025",

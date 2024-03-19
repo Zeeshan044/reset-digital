@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const Faqs = () => {
     return (
-        <div className=" px-[100px] dark:text-white">
-            <div className="flex justify-between montserrat border border-black py-2 pl-4  dark:border-none">
+        <div className=" dark:text-white text-primary-faq">
+            <div className="flex justify-between  montserrat border border-black py-8 pl-[100px] dark:border-none">
                 <div className=" w-[251px] ">
                     <div className=" flex gap-[18px] mb-[26px] items-center ">
                         <hr className=" bg-black w-6 h-1" />
@@ -28,7 +28,7 @@ const Faqs = () => {
                         <a href="" className="bg-black dark:bg-white border-primary-dark rounded-[5px] border text-white dark:text-black font-bold text-xs py-[9px] px-[14px]">More FAQs</a>
                     </div>
                 </div>
-                <div className="w-[600px]">
+                <div className="w-[650px]">
                     <div>
                         <p className=" font-semibold text-lg my-[15px]">Why work with Reset Digital?</p>
                         <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
@@ -87,7 +87,7 @@ const Faqs = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <div className="  flex flex-col items-center mt-[70px]">
                     <h5 className=" text-xs font-light mb-4 tracking-widest">OUR BLOG</h5>
                     <h2 className=" text-primary-dark mb-7 dark:text-white text-[50px] font-medium">Posts <i className="text-[#111111] font-thin"> & Articles</i></h2>
@@ -121,7 +121,7 @@ const Faqs = () => {
                         <p className=" text-base font-light dark:text-primary-grey text-secondary-cold mb-6">Captivating narrative that reflects the ever-changing landscape of creativity.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

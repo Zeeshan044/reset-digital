@@ -26,7 +26,7 @@ const Home = () => {
         <Foundation />
         <Cards />
         <Trusted />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <Reviews />
         <Skills />
         <Faqs />

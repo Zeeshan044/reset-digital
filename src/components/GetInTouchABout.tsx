@@ -6,14 +6,15 @@ import Image from "next/image";
 
 const GetInTouchABout = () => {
     return (
-        <div className="px-[166px] pt-[112px] pb-[80px] text-white ">
+        <div className=" max-w-5xl mx-auto  pt-[112px] pb-[80px] text-white ">
             <div className=" flex bg-[#292D32] rounded-[30px] h-[500px]">
                 <div className="  px-[68px] pt-[70px]  flex flex-col items-center relative overflow-hidden w-[452px]">
-                    <h5 className=" text-secondary-light text-xs font-light ">Get In Touch</h5>
-                    <h2 className=" text-[50px] font-medium text-center">Let's Start
+                    <h5 className=" text-secondary-light text-xs font-light tracking-widest">Get In Touch</h5>
+                    <h2 className=" text-6xl font-medium text-center mb-[18px]">Let's Start
                         <i className=" font-thin text-primary-dark -mt-5"> Your Project</i></h2>
-                    <p className=" text-base font-light text-center ">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Vestibulum convallis.</p>
+                    <p className=" text-base font-light text-center text-primary-grey ">The customer is very important, the customer
+                        will be followed by the customer. Vestibule
+                        valley</p>
                     <a href="" className=" bg-primary-dark py-3 px-6 rounded-full mt-8 text-black">Get In Touch</a>
                 </div>
                 <div className="h-[500px] relative overflow-hidden">

@@ -2,17 +2,17 @@ import React from "react";
 
 const Packages = () => {
     return (
-        <div className="px-[166px] dark:text-white">
-            <div className=" flex flex-col items-center pb-[66px] mt-[68px] px-[350px]">
-                <h5 className=" text-xs font-light dark:text-secondary-light text-[#1D2025] mb-4 tracking-widest">OPTIONS</h5>
-                <h2 className="text-[50px] font-medium mb-4">Our <i className=" text-primary-dark font-thin">
+        <div className=" max-w-5xl mx-auto dark:text-white">
+            <div className=" flex flex-col items-center pb-[66px] mt-[68px] ">
+                <h5 className=" text-xs font-light dark:text-secondary-light text-secondary-dark mb-4 tracking-widest">OPTIONS</h5>
+                <h2 className=" text-6xl font-medium mb-4">Our <i className=" text-primary-dark font-thin">
                     Packages</i>
                 </h2>
-                <p className=" text-base font-light text-center dark:text-primary-grey text-[#1D2025]">Lorem ipsum dolor sit amet, consectetur
+                <p className=" text-base font-light text-center dark:text-primary-grey text-secondary-dark px-[340px]">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Vestibulum convallis. </p>
             </div>
             <div className=" grid grid-cols-2 gap-8 px-[177px] justify-center pb-[112px]">
-                <div className=" bg-[#262626] px-10 py-16 font-light flex flex-col items-center rounded-[10px]">
+                <div className=" bg-[#262626] px-8 py-16 font-light flex flex-col items-center rounded-[10px]">
                     <h4 className=" text-secondary-light font-medium text-[32px] text-center ">Basic Branding
                         Package</h4>
                     <h2 className=" text-xl my-8 text-secondary-light ">$ 599.00 CAD</h2>
@@ -28,7 +28,7 @@ const Packages = () => {
                     <hr className="border-b-1 border-[#999999] border-opacity-30 w-full pb-3" />
                     <button className=" text-center rounded-full bg-primary-dark text-[#1D2025] mt-8 px-6 py-3 text-sm">Get Started</button>
                 </div>
-                <div className=" bg-[#262626] px-10 py-16 font-light flex flex-col items-center rounded-[10px]">
+                <div className=" bg-[#262626] px-8 py-16 font-light flex flex-col items-center rounded-[10px]">
                     <h4 className=" text-secondary-light font-medium text-[32px] text-center ">Professional Web
                         Design Package</h4>
                     <h2 className=" text-xl my-8 text-secondary-light ">$ 1,499.00 CAD</h2>
@@ -43,7 +43,7 @@ const Packages = () => {
                     <hr className="border-b-1 border-[#999999] border-opacity-30 w-full pb-3" />
                     <button className=" text-center rounded-full bg-primary-dark text-[#1D2025] mt-8 px-6 py-3 text-sm">Get Started</button>
                 </div>
-                <div className=" bg-[#262626] px-[34px] py-16 font-light flex flex-col items-center  rounded-[10px]">
+                <div className=" bg-[#262626] px-8 py-16 font-light flex flex-col items-center  rounded-[10px]">
                     <h4 className=" text-secondary-light font-medium text-[32px] text-center ">Premium Design &
                         Marketing Package</h4>
                     <h2 className=" text-xl my-8 text-secondary-light ">$ 2,399.00 CAD</h2>

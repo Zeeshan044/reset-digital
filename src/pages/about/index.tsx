@@ -19,7 +19,7 @@ const About = () => {
         <AboutHero />
         <Trusted />
         <DiscoveryStory />
-        <OurTeam />
+        {/* <OurTeam /> */}
         <AbotVAlues />
         <Skills />
         <Reviews />

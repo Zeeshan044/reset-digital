@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import facebook from "@/assets/images/facebook.svg"
 import insta from "@/assets/images/insta.svg"
 import twitter from "@/assets/images/twitter.svg"
@@ -7,19 +7,19 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <div className="  px-[85px] pt-20">
+        <div className=" max-w-7xl pt-20 text-secondary-cold dark:text-secondary-light">
             <div className=" flex justify-between">
                 <div>
                     <p className=" font-semibold text-base mb-[17px] dark:text-white">RESET DIGITAL</p>
-                    <p className=" text-secondary-cold dark:text-primary-grey text-base font-light mb-3">Where Creativity Meets Innovation.</p>
+                    <p className="   text-base font-light mb-3">Where Creativity Meets Innovation.</p>
                     <div className=" flex gap-8">
-                        <Image src={facebook} alt="" className="bg-black dark:bg-none" />
-                        <Image src={insta} alt="" className="bg-black dark:bg-none" />
-                        <Image src={twitter} alt="" className="bg-black dark:bg-none" />
-                        <Image src={youtube} alt="" className="bg-black dark:bg-none" />
+                        <Image src={facebook} alt="" className="fill-red-500 dark:fill-red-900" />
+                        <Image src={insta} alt="" className="fill-red-500 dark:fill-red-900" />
+                        <Image src={twitter} alt="" />
+                        <Image src={youtube} alt="" />
                     </div>
                 </div>
-                <div className=" grid grid-cols-3 text-secondary-cold dark:text-secondary-light">
+                <div className=" grid grid-cols-3 ">
                     <div className=" opensans gap-y-[10px] w-[215px]">
                         <p className="text-4 font-normal mb-[10px]">Main</p>
                         <p className=" text-[15px] font-light mb-3">Home</p>
