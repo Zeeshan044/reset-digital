@@ -6,88 +6,119 @@ import avatar from "@/assets/images/avatar.png";
 import Image from "next/image";
 
 const Faqs = () => {
-    return (
-        <div className=" dark:text-white text-primary-faq">
-            <div className="flex justify-between  montserrat border border-black py-8 pl-[100px] dark:border-none">
-                <div className=" w-[251px] ">
-                    <div className=" flex gap-[18px] mb-[26px] items-center ">
-                        <hr className=" bg-black w-6 h-1" />
-                        <p className=" font-normal text-xl text-primary-dark ">FAQS</p>
-                    </div>
-                    <div>
-                        <h2 className="font-extrabold text-2xl ">Quick answers to
-                            commonly asked
-                            questions.</h2>
-                        <p className="text-base font-normal mb-[25px] mt-[14px]">We take pride in providing
-                            transparency to our clients and
-                            strive to maintain clarity in
-                            everything we do. If you’re not
-                            ready to contact us but have a
-                            question, you may find
-                            answers here.</p>
-                        <a href="" className="bg-black dark:bg-white border-primary-dark rounded-[5px] border text-white dark:text-black font-bold text-xs py-[9px] px-[14px]">More FAQs</a>
-                    </div>
-                </div>
-                <div className="w-[650px]">
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Why work with Reset Digital?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Where is your team based?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">What is your web design process like?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">What will my project cost?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Do you offer website maintenance?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">How can I get an estimate for my project?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">What industries or types of clients do you work with?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Can you fix my existing website?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Who will be working on my project?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Do you offer search engine optimization services?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Do you use templates in your web design and development?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">DDo you offer any digital marketing agency services?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">What website platforms do you work with?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                    <div>
-                        <p className=" font-semibold text-lg my-[15px]">Do you work with WordPress templates?</p>
-                        <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
-                    </div>
-                </div>
-            </div>
-            {/* <div>
+  return (
+    <div className="dark:text-white text-primary-faq custom-container">
+      <div className="flex justify-between  montserrat border border-black pl-24 py-8 dark:border-none">
+        <div className="w-[251px] ">
+          <div className="flex gap-[18px] mb-[26px] items-center">
+            <hr className="bg-black dark:bg-white w-6 h-1" />
+            <p className="font-normal text-xl text-primary-dark">FAQS</p>
+          </div>
+          <div>
+            <h2 className="font-extrabold text-2xl ">
+              Quick answers to commonly asked questions.
+            </h2>
+            <p className="text-base font-normal mb-[25px] mt-[14px]">
+              We take pride in providing transparency to our clients and strive
+              to maintain clarity in everything we do. If you’re not ready to
+              contact us but have a question, you may find answers here.
+            </p>
+            <a
+              href=""
+              className="bg-black dark:bg-white border-primary-dark rounded-[5px] border text-white dark:text-black font-bold text-xs py-[9px] px-[14px]"
+            >
+              More FAQs
+            </a>
+          </div>
+        </div>
+        <div className="w-[650px]">
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Why work with Reset Digital?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Where is your team based?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              What is your web design process like?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              What will my project cost?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Do you offer website maintenance?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              How can I get an estimate for my project?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              What industries or types of clients do you work with?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Can you fix my existing website?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Who will be working on my project?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Do you offer search engine optimization services?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Do you use templates in your web design and development?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              DDo you offer any digital marketing agency services?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              What website platforms do you work with?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+          <div>
+            <p className=" font-semibold text-lg my-[15px]">
+              Do you work with WordPress templates?
+            </p>
+            <hr className="dark:bg-[#CACACA] bg-[#111A21] border-1" />
+          </div>
+        </div>
+      </div>
+      {/* <div>
                 <div className="  flex flex-col items-center mt-[70px]">
                     <h5 className=" text-xs font-light mb-4 tracking-widest">OUR BLOG</h5>
                     <h2 className=" text-primary-dark mb-7 dark:text-white text-[50px] font-medium">Posts <i className="text-[#111111] font-thin"> & Articles</i></h2>
@@ -122,8 +153,8 @@ const Faqs = () => {
                     </div>
                 </div>
             </div> */}
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Faqs;

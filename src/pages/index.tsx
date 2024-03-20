@@ -11,16 +11,10 @@ import Faqs from "@/components/Faqs";
 import StartProject from "@/components/StartProject";
 import Footer from "@/components/Footer";
 
-
 const Home = () => {
-
   return (
-    <main
-      className=
-      "min-h-screen bg-white dark:bg-gradient-dark"
-
-    >
-      <div className="custom-container">
+    <main className="min-h-screen bg-white dark:bg-gradient-dark">
+      <div>
         <Navbar />
         <HomeAbout />
         <Foundation />
