@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 
 const About = () => {
     return (
-        <main className="min-h-screen bg-white dark:bg-[#1D2025]">
+        <main className="min-h-screen bg-white dark:bg-secondary-dark">
             <div className="custom-container">
                 <Navbar />
                 <Projects />

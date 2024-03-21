@@ -7,7 +7,7 @@ import Image from "next/image";
 const GetInTouchABout = () => {
     return (
         <div className=" max-w-5xl mx-auto  pt-[112px] pb-[80px] text-white ">
-            <div className=" flex bg-[#292D32] rounded-[30px] h-[500px]">
+            <div className=" flex bg-[#292D32] rounded-[30px] h-[430px]">
                 <div className="  px-[68px] pt-[70px]  flex flex-col items-center relative overflow-hidden w-[452px]">
                     <h5 className=" text-secondary-light text-xs font-light tracking-widest">Get In Touch</h5>
                     <h2 className=" text-6xl font-medium text-center mb-[18px]">Let's Start
