@@ -8,23 +8,53 @@ import LogoService from "@/components/LogoService";
 import SeoService from "@/components/SeoService";
 import ChooseServices from "@/components/ChooseServices";
 import GetInTouchABout from "@/components/GetInTouchABout";
+import { ScrollerMotion } from "scroller-motion";
+import FadeInMotion from "@/components/FadeInMotion";
 
-const Home = () => {
-    return (
-        <main className="min-h-screen bg-white dark:bg-secondary-dark">
-            <div className=" custom-container">
-                <Navbar />
-                <ServiceAbout />
-                <WebService />
-                <LogoService />
-                <SeoService />
-                <ChooseServices />
-                <Reviews />
-                <GetInTouchABout />
-                <Footer />
-            </div>
-        </main>
-    );
+const Services = () => {
+  return (
+    <main className="min-h-screen bg-white dark:bg-secondary-dark">
+      <div className="custom-container">
+        <Navbar />
+        {/* About */}
+        <FadeInMotion>
+          <ServiceAbout />
+        </FadeInMotion>
+        {/* Web Services */}
+        <FadeInMotion>
+          <WebService />
+        </FadeInMotion>
+        {/* Logo Services */}
+        <FadeInMotion>
+          <LogoService />
+        </FadeInMotion>
+        {/* SEO Services */}
+        <FadeInMotion>
+          <SeoService />
+        </FadeInMotion>
+        {/* Choose Services */}
+        <FadeInMotion>
+          <ChooseServices />
+        </FadeInMotion>
+        {/* Reviews */}
+        <FadeInMotion>
+          <Reviews />
+        </FadeInMotion>
+        {/* Get In Touch */}
+        <FadeInMotion>
+          <GetInTouchABout />
+        </FadeInMotion>
+
+        <Footer />
+      </div>
+    </main>
+  );
 };
 
-export default Home;
+const ServicesPage = () => (
+  <ScrollerMotion>
+    <Services />
+  </ScrollerMotion>
+);
+
+export default ServicesPage;

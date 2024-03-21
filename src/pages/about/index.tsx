@@ -7,26 +7,57 @@ import Skills from "@/components/Skills";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 import AboutValues from "@/components/AboutVAlues";
-import StartProject from "@/components/StartProject";
+// import StartProject from "@/components/StartProject";
 import GetInTouchABout from "@/components/GetInTouchABout";
-import OurTeam from "@/components/OurTeam";
-
+// import OurTeam from "@/components/OurTeam";
+import FadeInMotion from "@/components/FadeInMotion";
+import { ScrollerMotion } from "scroller-motion";
 const About = () => {
   return (
-    <main className="min-h-screen bg-white dark:bg-gradient-dark">
-      <div className="custom-container">
-        <Navbar />
-        <AboutHero />
-        <Trusted />
-        <DiscoveryStory />
-        {/* <OurTeam /> */}
-        <AboutValues />
-        <Skills />
-        <Reviews />
-        <GetInTouchABout />
-        <Footer />
-      </div>
-    </main>
+    <ScrollerMotion>
+      <main className="min-h-screen bg-white dark:bg-gradient-dark">
+        <div className="custom-container">
+          <Navbar />
+          {/* Hero */}
+          <FadeInMotion>
+            <AboutHero />
+          </FadeInMotion>
+
+          {/* Partners */}
+          <FadeInMotion>
+            <Trusted />
+          </FadeInMotion>
+
+          {/* Story */}
+          <FadeInMotion>
+            <DiscoveryStory />
+          </FadeInMotion>
+
+          {/* Values */}
+          <FadeInMotion>
+            <AboutValues />
+          </FadeInMotion>
+
+          {/* Skills */}
+          <FadeInMotion>
+            <Skills />
+          </FadeInMotion>
+
+          {/* Reviews */}
+          <FadeInMotion>
+            <Reviews />
+          </FadeInMotion>
+
+          {/* Get In Touch */}
+          <FadeInMotion>
+            <GetInTouchABout />
+          </FadeInMotion>
+
+          {/* <OurTeam /> */}
+          <Footer />
+        </div>
+      </main>
+    </ScrollerMotion>
   );
 };
 

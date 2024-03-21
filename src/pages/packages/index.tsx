@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GetInTouchABout from "@/components/GetInTouchABout";
 import Packages from "@/components/Packages";
+import { ScrollerMotion } from "scroller-motion";
 
 const About = () => {
   return (
@@ -17,4 +18,10 @@ const About = () => {
   );
 };
 
-export default About;
+const PackagesPage = () => (
+  <ScrollerMotion>
+    <About />
+  </ScrollerMotion>
+);
+
+export default PackagesPage;

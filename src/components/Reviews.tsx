@@ -15,7 +15,7 @@ const Reviews = () => {
           <div className="bg-secondary-box rounded-[30px] h-[300px] w-[800px]  ">
             <div className="pl-[60px] pr-[105px] flex justify-center items-center py-[90px]">
               <Image src={profile} alt="" />
-              <p className=" text-xs font-light text-primary-grey ">
+              <p className="font-light text-primary-grey ">
                 Collaborating with Reset Digital has been a fantastic journey.
                 They simplified the creative process remarkably and offered
                 pricing that was fair and competitive.
@@ -24,10 +24,12 @@ const Reviews = () => {
           </div>
 
           <div className="font-light  h-[300px] flex flex-col w-[240px] items-center justify-center tracking-widest">
-            <h5 className=" text-xs text-secondary-dark dark:text-secondary-light mb-2 ">
+            <h5 className="uppercase text-xs text-secondary-dark dark:text-secondary-light mb-2 tracking-[8px]">
               JAMES BlacK
             </h5>
-            <h6 className=" text-[10px] text-primary-dark ">Client Review</h6>
+            <h6 className="uppercase text-[10px] text-primary-dark tracking-[8px]">
+              Client Review
+            </h6>
           </div>
           <div className="flex items-center px-[34px] h-[300px]  bg-[#292D32] mr-[6px] rounded-[10px]">
             <button className=" text-[25px] font-light text-white">+</button>
