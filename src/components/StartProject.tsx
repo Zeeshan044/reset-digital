@@ -2,6 +2,7 @@ import React from "react";
 import Project1 from "@/assets/images/project.png";
 import Project2 from "@/assets/images/project2.png";
 import Image from "next/image";
+import Link from "next/link";
 const StartProject = () => {
   return (
     <div className="max-w-6xl mx-auto pt-28 pb-20 text-secondary-light">
@@ -15,12 +16,12 @@ const StartProject = () => {
           Contact us to create <br />
           your dream online presence
         </p>
-        <a
-          href=""
+        <Link
+          href="/contact"
           className=" bg-primary-dark py-3 px-6 rounded-full mt-8 text-secondary-dark"
         >
           Get In Touch
-        </a>
+        </Link>
         <Image src={Project2} alt="" className="absolute right-0 top-0" />
         <Image src={Project1} alt="" className="absolute right-0" />
       </div>

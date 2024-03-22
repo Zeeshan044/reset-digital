@@ -5,6 +5,8 @@ import Box1 from "@/assets/images/box1st.png";
 import Box2 from "@/assets/images/box2nd.png";
 import Box3 from "@/assets/images/box3rd.png";
 import Box4 from "@/assets/images/boxlast.png";
+import foundation from "@/assets/images/foundation.png";
+
 
 const AboutValues = () => {
   return (
@@ -22,8 +24,33 @@ const AboutValues = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center">
-        <Image src={AboutImg} alt="image" className="mb-[80px]" />
+      <div className="flex flex-col items-center my-20 ">
+        <div className="flex justify-center items-center archia">
+          <h2 className=" text-2xl font-medium ">Foundation of Our work</h2>
+        </div>
+        <div className="flex justify-between gap-[19px]  mt-[66px]  archia">
+          <div className="flex flex-col justify-between ml-10">
+            <div className=" font-medium mt-[40px] ">
+              <h2 className=" text-[25px]">Functionality</h2>
+              <p className=" text-[13px] dark:text-white/60 text-primary-faq">
+                Designs that serve a purpose
+              </p>
+            </div>
+            <div className=" font-medium mb-16">
+              <h2 className=" text-[25px]">Simplicity</h2>
+              <p className=" text-[13px] dark:text-white/60 text-primary-faq">
+                Complexity surfaced only when nessesery
+              </p>
+            </div>
+          </div>
+          <Image src={foundation} alt="" width={536} height={523} />
+          <div className=" font-medium mt-[35px]">
+            <h2 className=" text-[25px]">Emotion</h2>
+            <p className=" text-[13px] dark:text-white/60 text-primary-faq">
+              Products with a character & solutions optimized for emotion
+            </p>
+          </div>
+        </div>
       </div>
       <div className=" flex flex-col items-center justify-center">
         <div className="flex justify-between gap-4 px-[94px]">

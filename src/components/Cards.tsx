@@ -9,13 +9,13 @@ const Cards = () => {
             <h5 className="text-xs dark:text-secondary-light text-secondary-cold mb-4 tracking-[8px] uppercase ">
               Imagine & Design
             </h5>
-            <p className="text-base w-[459px] dark:text-primary-grey text-secondary-dark tracking-wide">
+            <p className="text-base w-[415px] dark:text-primary-grey text-secondary-dark tracking-wide">
               From brand development to captivating user experiences, We
               specialize in turning concepts into compelling realities.
             </p>
           </div>
           <div>
-            <h2 className="text-[55px] mt-3 dark:text-secondary-light">
+            <h2 className="text-[55px] mt-3 dark:text-secondary-light text-secondary-cold">
               We Create{" "}
               <i className="text-primary-dark font-thin">Experiences</i>
             </h2>

@@ -7,13 +7,13 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl mx-auto pt-20 text-secondary-cold dark:text-secondary-light">
+    <div className="max-w-7xl mx-auto pt-20 dark:text-secondary-light">
       <div className="flex justify-between">
         <div>
           <p className=" font-semibold text-base mb-[17px] dark:text-white">
             RESET DIGITAL
           </p>
-          <p className="text-base font-light mb-3 text-black">
+          <p className="text-base font-light mb-3 ">
             Where Creativity Meets Innovation.
           </p>
           <div className=" flex gap-8">
@@ -31,7 +31,7 @@ const Footer = () => {
             <Image src={youtube} alt="" />
           </div>
         </div>
-        <div className=" grid grid-cols-3 text-black">
+        <div className=" grid grid-cols-3 text-secondary-cold dark:text-secondary-light ">
           <div className=" opensans gap-y-[10px] w-[215px]">
             <p className="text-4 font-normal mb-[10px]">Main</p>
             <p className=" text-[15px] font-light mb-3">Home</p>

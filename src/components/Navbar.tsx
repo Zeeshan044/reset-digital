@@ -16,12 +16,12 @@ const Navbar = () => {
           <Link href="/about" className="">
             ABOUT
           </Link>
-          <Link href="/packages" className="">
+          {/* <Link href="/packages" className="">
             PACKAGES
           </Link>
           <Link href="/" className="">
             BLOG
-          </Link>
+          </Link> */}
           <Link href="/services" className="">
             SERVICES
           </Link>
