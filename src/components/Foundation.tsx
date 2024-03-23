@@ -5,7 +5,7 @@ import foundation from "@/assets/images/foundation.png";
 import DoubleArrow from "./icons/DoubleArrow";
 const Foundation = () => {
   return (
-    <div className=" border w-full right-0 left-0 border-black border-x-0 ">
+    <div className="w-full right-0 left-0">
       <div className={`pb-6 pt-8  dark:text-white`}>
         <div className="max-w-7xl mx-auto ">
           <div className="flex justify-between gap-4 items-center mb-8">

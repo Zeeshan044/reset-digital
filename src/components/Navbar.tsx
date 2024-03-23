@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="custom-container">
-      <nav className="flex justify-between items-center h-[92px] mx-auto py-4 dark:text-white">
+      <nav className="flex justify-between items-center h-[92px] mx-auto py-4 px-4 dark:text-white">
         <div>
           <h2 className="text-2xl font-semibold">RESET DIGITAL</h2>
         </div>

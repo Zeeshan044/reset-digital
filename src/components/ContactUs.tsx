@@ -1,4 +1,5 @@
 import React from "react";
+import FadeInMotion from "./FadeInMotion";
 
 const ContactUs = () => {
   return (
@@ -108,4 +109,10 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default function Wrapper() {
+  return (
+    <FadeInMotion>
+      <ContactUs />
+    </FadeInMotion>
+  );
+}
