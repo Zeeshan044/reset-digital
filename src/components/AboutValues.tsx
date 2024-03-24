@@ -7,7 +7,6 @@ import Box3 from "@/assets/images/box3rd.png";
 import Box4 from "@/assets/images/boxlast.png";
 import foundation from "@/assets/images/foundation.png";
 
-
 const AboutValues = () => {
   return (
     <div className="container-small  dark:text-white">
@@ -52,40 +51,49 @@ const AboutValues = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col items-center justify-center">
-        <div className="flex justify-between gap-4 px-[94px]">
-          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light py-8 pl-8 rounded-[29px] w-[240px] h-[322px]">
+
+      <div className="grid grid-cols-4 gap-8">
+        <div>
+          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box1} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">HARDWORK</h5>
-            <p className="text-primary-grey text-base">
+            <p className="text-primary-grey text-sm">
               The client is paramount, and we prioritize dedicated support for
               our clients. Welcome to the forefront of exceptional service at
               Reset Digital.
             </p>
           </div>
-          <div className="bg-secondary-box font-light py-8 text-secondary-cold dark:text-secondary-light px-8 rounded-[29px] w-[240px] h-[244px]">
+        </div>
+        <div>
+          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box2} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">INNOVATION</h5>
-            <p className="text-primary-grey text-base">
+            <p className="text-primary-grey text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
-          <div className="bg-secondary-box font-light text-secondary-cold dark:text-secondary-light py-8 px-8 rounded-[29px] w-[240px] h-[244px]">
+        </div>
+        <div>
+          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box3} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">GROWTH</h5>
-            <p className="text-primary-grey text-base">
+            <p className="text-primary-grey text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
         </div>
-        <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light py-8 px-8 rounded-[29px] mt-4 w-[240px] h-[244px] -bottom-40">
-          <Image src={Box4} alt="" />
-          <h5 className="text-secondary-light text-xs mt-4">TEAMWORK</h5>
-          <p className="text-primary-grey text-base">
-            I am very sorry for the pain, it will be followed.
-          </p>
+        <div>
+          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
+            <Image src={Box4} alt="" />
+            <h5 className="text-secondary-light text-xs mt-4">TEAMWORK</h5>
+            <p className="text-primary-grey text-sm">
+              I am very sorry for the pain, it will be followed.
+            </p>
+          </div>
         </div>
       </div>
+
+      {/* s */}
     </div>
   );
 };

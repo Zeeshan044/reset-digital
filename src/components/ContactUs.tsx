@@ -3,7 +3,7 @@ import FadeInMotion from "./FadeInMotion";
 
 const ContactUs = () => {
   return (
-    <div className=" container-small mt-[68px] pb-[284px]">
+    <div className="container-small mt-[68px] pb-[284px]">
       <div className=" bg-secondary-box py-20 px-[70px] flex flex-col gap-8">
         <div className=" gap-4 flex flex-col items-center px-[30px]">
           <h5 className=" font-light text-xs text-secondary-light tracking-[8px]">
