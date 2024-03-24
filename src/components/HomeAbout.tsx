@@ -28,7 +28,7 @@ const HomeAbout = () => {
           </p>
         </div>
         <div className="items-start flex overflow-hidden">
-          <div className="flex items-center gap-12">
+          <div className="flex items-center gap-12 w-full">
             <Image src={Spinner} alt="" className="w-[120px] h-[120px]" />
             <div className="grow">
               <Image
