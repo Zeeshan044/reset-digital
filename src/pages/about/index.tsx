@@ -1,59 +1,27 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
+import AppNav from "@/components/layout/app-nav";
 import AboutHero from "@/components/AboutHero";
-import Trusted from "@/components/Trusted";
+import PartnerSection from "@/components/pages/partner-section";
 import DiscoveryStory from "@/components/DiscoverStory";
 import Skills from "@/components/Skills";
-import Reviews from "@/components/Reviews";
+import Reviews from "@/components/pages/reviews-section";
 import Footer from "@/components/Footer";
 import AboutValues from "@/components/AboutValues";
-// import StartProject from "@/components/StartProject";
 import GetInTouchABout from "@/components/GetInTouchABout";
-// import OurTeam from "@/components/OurTeam";
-import FadeInMotion from "@/components/FadeInMotion";
 import { ScrollerMotion } from "scroller-motion";
 const About = () => {
   return (
     <ScrollerMotion>
-      <main className="min-h-screen bg-white dark:bg-secondary-dark">
+      <main className="min-h-screen bg-background dark:bg-background-dark">
         <div className="custom-container">
-          <Navbar />
-          {/* Hero */}
-          <FadeInMotion>
-            <AboutHero />
-          </FadeInMotion>
-
-          {/* Partners */}
-          <FadeInMotion>
-            <Trusted />
-          </FadeInMotion>
-
-          {/* Story */}
-          <FadeInMotion>
-            <DiscoveryStory />
-          </FadeInMotion>
-
-          {/* Values */}
-          <FadeInMotion>
-            <AboutValues />
-          </FadeInMotion>
-
-          {/* Skills */}
-          <FadeInMotion>
-            <Skills />
-          </FadeInMotion>
-
-          {/* Reviews */}
-          <FadeInMotion>
-            <Reviews />
-          </FadeInMotion>
-
-          {/* Get In Touch */}
-          <FadeInMotion>
-            <GetInTouchABout />
-          </FadeInMotion>
-
-          {/* <OurTeam /> */}
+          <AppNav />
+          <AboutHero />
+          <PartnerSection />
+          <DiscoveryStory />
+          <AboutValues />
+          <Skills />
+          <Reviews />
+          <GetInTouchABout />
           <Footer />
         </div>
       </main>

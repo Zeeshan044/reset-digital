@@ -11,17 +11,29 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
+          DEFAULT: "#82E8F2",
           dark: "#82E8F2",
-          btn: "#786DFF4D",
           grey: "#D0D0D0",
           faq: "#111A21",
         },
-        secondary: {
+        background: {
+          DEFAULT: "#FFFFFF",
           dark: "#1D2025",
-          light: "#F5F5F5",
-          cold: "#111111",
-          box: "#292D32",
         },
+        body: {
+          DEFAULT: "#D0D0D0",
+          dark: "#111111",
+        },
+        card: {
+          DEFAULT: "#FFFFFF",
+          dark: "#292D32",
+        },
+      },
+      fontFamily: {
+        "open-sans": ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        archia: ["Archia", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "gradient-system-dark":

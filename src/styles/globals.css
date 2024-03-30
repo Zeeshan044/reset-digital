@@ -17,32 +17,38 @@
     font-weight: 400;
     font-style: normal;
   }
-  
+
+  /* Target the entire scrollbar (for WebKit browsers) */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Target the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+
+  /* Target the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: theme('colors.background.dark');
+  }
+
   body {
     font-family: "Archivo", sans-serif;
   }
-  .montserrat {
-    font-family: "Montserrat", sans-serif;
-  }
-  .opensans {
-    font-family: "Open Sans", sans-serif;
-  }
-  .archia {
-    font-family: "Archia", sans-serif;
-  }
-  .inter {
-    font-family: "Inter", sans-serif;
-  }
+
   .custom-container {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .container-small {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .bg-gradient-dark {
     background-image: linear-gradient(3.95deg, #82e8f2 -19.7%, #1d2025 96.77%);
   }

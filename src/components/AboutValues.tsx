@@ -14,9 +14,9 @@ const AboutValues = () => {
         <h2 className="text-6xl font-medium mt-14">
           Our <i className="text-primary-dark font-thin">Values</i>
         </h2>
-        <div className="font-light w-[331px] text-secondary-cold dark:text-secondary-light">
+        <div className="font-light w-[331px] text-body-dark dark:text-secondary-light">
           <h2 className="text-xs tracking-widest ">WHAT WE BELIEVE</h2>
-          <p className="text-base mt-4 dark:text-primary-grey">
+          <p className="text-base mt-4 text-body-dark dark:text-body">
             The client is paramount, and we prioritize dedicated support for our
             clients. Welcome to the forefront of exceptional service at Reset
             Digital.
@@ -24,10 +24,10 @@ const AboutValues = () => {
         </div>
       </div>
       <div className="flex flex-col items-center my-20 ">
-        <div className="flex justify-center items-center archia">
+        <div className="flex justify-center items-center font-archia">
           <h2 className=" text-2xl font-medium ">Foundation of Our work</h2>
         </div>
-        <div className="flex justify-between gap-[19px]  mt-[66px]  archia">
+        <div className="flex justify-between gap-[19px]  mt-[66px]  font-archia">
           <div className="flex flex-col justify-between ml-10">
             <div className=" font-medium mt-[40px] ">
               <h2 className=" text-[25px]">Functionality</h2>
@@ -54,10 +54,10 @@ const AboutValues = () => {
 
       <div className="grid grid-cols-4 gap-8">
         <div>
-          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card-dark text-body-dark dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box1} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">HARDWORK</h5>
-            <p className="text-primary-grey text-sm">
+            <p className="text-body-dark dark:text-body text-sm">
               The client is paramount, and we prioritize dedicated support for
               our clients. Welcome to the forefront of exceptional service at
               Reset Digital.
@@ -65,28 +65,28 @@ const AboutValues = () => {
           </div>
         </div>
         <div>
-          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card-dark text-body-dark dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box2} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">INNOVATION</h5>
-            <p className="text-primary-grey text-sm">
+            <p className="text-body-dark dark:text-body text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
         </div>
         <div>
-          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card-dark text-body-dark dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box3} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">GROWTH</h5>
-            <p className="text-primary-grey text-sm">
+            <p className="text-body-dark dark:text-body text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
         </div>
         <div>
-          <div className="bg-secondary-box text-secondary-cold dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card-dark text-body-dark dark:text-secondary-light font-light p-8 rounded-[29px]">
             <Image src={Box4} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">TEAMWORK</h5>
-            <p className="text-primary-grey text-sm">
+            <p className="text-body-dark dark:text-body text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>

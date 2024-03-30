@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
+import AppNav from "@/components/layout/app-nav";
 import Footer from "@/components/Footer";
 import GetInTouchABout from "@/components/GetInTouchABout";
 import Packages from "@/components/Packages";
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <main className="min-h-screen bg-white dark:bg-gradient-dark">
       <div className="custom-container">
-        <Navbar />
+        <AppNav />
         <Packages />
         {/* <GetInTouchABout /> */}
         <Footer />
