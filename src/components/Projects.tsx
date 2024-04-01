@@ -36,7 +36,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body  text-base font-light">
+              <p className="   text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -57,7 +57,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body  text-base font-light">
+              <p className="   text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -78,7 +78,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body  text-base font-light">
+              <p className="   text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -98,7 +98,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body  text-base font-light">
+              <p className="   text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>

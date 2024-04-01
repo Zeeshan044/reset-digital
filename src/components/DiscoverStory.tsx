@@ -4,12 +4,10 @@ import Foundation from "@/assets/images/foundation1.svg";
 import Image from "next/image";
 const DiscoveryStore = () => {
   return (
-    <div className=" container-small pb-[112px]">
-      <div className="text-body  font-light flex gap-[102px] justify-between mb-12">
+    <div className=" container-custom-sm pb-[112px]">
+      <div className="  font-light flex gap-[102px] justify-between mb-12">
         <div className=" w-[397px]">
-          <h5 className="text-xs font-light tracking-widest text-body dark:text-secondary-light">
-            GET TO KNOW
-          </h5>
+          <h5 className="text-xs font-light tracking-widest  ">GET TO KNOW</h5>
           <p className=" text-base mt-4">
             Welcome to Reset Digital, your dedicated partnerin web design and
             digital transformation. At the intersection of creativity and
@@ -21,14 +19,14 @@ const DiscoveryStore = () => {
           </p>
         </div>
         <div>
-          <h2 className="text-6xl font-medium pr-20 text-body ">
+          <h2 className="text-6xl font-medium pr-20  ">
             Discover <i className=" text-primary font-thin">Our Story</i>
           </h2>
         </div>
       </div>
       <div className="flex justify-between gap-10">
         <Image src={discoverImg} alt="" className=" rounded-[20px]" />
-        <div className=" font-light text-base text-body  gap-[26px] ">
+        <div className=" font-light text-base   gap-[26px] ">
           <p className=" mb-[26px]">
             Founded in 2024, Reset Digital was born out of a shared love for
             design, technology, and the limitless possibilities of the web.

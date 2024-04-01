@@ -8,7 +8,7 @@ const About = () => {
   return (
     <ScrollerMotion>
       <main className="min-h-screen bg-background dark:bg-background">
-        <div className="custom-container">
+        <div className="container-custom">
           <AppNav />
           <ContactUs />
           <Footer />

@@ -7,7 +7,7 @@ import Projects from "@/components/Projects";
 const About = () => {
   return (
     <main className="min-h-screen bg-background dark:bg-background">
-      <div className="custom-container">
+      <div className="container-custom">
         <AppNav />
         <Projects />
         <GetInTouchABout />

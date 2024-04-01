@@ -9,14 +9,14 @@ import foundation from "@/assets/images/foundation.png";
 
 const AboutValues = () => {
   return (
-    <div className="container-small  dark:text-white">
+    <div className="container-custom-sm  dark:text-white">
       <div className="flex justify-between mb-[80px]">
         <h2 className="text-6xl font-medium mt-14">
           Our <i className="text-primary font-thin">Values</i>
         </h2>
-        <div className="font-light w-[331px] text-body dark:text-secondary-light">
+        <div className="font-light w-[331px]  ">
           <h2 className="text-xs tracking-widest ">WHAT WE BELIEVE</h2>
-          <p className="text-base mt-4 text-body ">
+          <p className="text-base mt-4  ">
             The client is paramount, and we prioritize dedicated support for our
             clients. Welcome to the forefront of exceptional service at Reset
             Digital.
@@ -54,10 +54,10 @@ const AboutValues = () => {
 
       <div className="grid grid-cols-4 gap-8">
         <div>
-          <div className="bg-card text-body dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card   font-light p-8 rounded-[29px]">
             <Image src={Box1} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">HARDWORK</h5>
-            <p className="text-body  text-sm">
+            <p className="  text-sm">
               The client is paramount, and we prioritize dedicated support for
               our clients. Welcome to the forefront of exceptional service at
               Reset Digital.
@@ -65,28 +65,28 @@ const AboutValues = () => {
           </div>
         </div>
         <div>
-          <div className="bg-card text-body dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card   font-light p-8 rounded-[29px]">
             <Image src={Box2} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">INNOVATION</h5>
-            <p className="text-body  text-sm">
+            <p className="  text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
         </div>
         <div>
-          <div className="bg-card text-body dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card   font-light p-8 rounded-[29px]">
             <Image src={Box3} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">GROWTH</h5>
-            <p className="text-body  text-sm">
+            <p className="  text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>
         </div>
         <div>
-          <div className="bg-card text-body dark:text-secondary-light font-light p-8 rounded-[29px]">
+          <div className="bg-card   font-light p-8 rounded-[29px]">
             <Image src={Box4} alt="" />
             <h5 className="text-secondary-light text-xs mt-4">TEAMWORK</h5>
-            <p className="text-body  text-sm">
+            <p className="  text-sm">
               I am very sorry for the pain, it will be followed.
             </p>
           </div>

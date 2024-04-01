@@ -42,7 +42,7 @@ const Reviews = () => {
   return (
     <div className="max-w-7xl mx-auto py-24 px-10">
       <div>
-        <div className="flex flex-col items-center justify-center gap-y-4 mb-12 text-body ">
+        <div className="flex flex-col items-center justify-center gap-y-4 mb-12  ">
           <h5 className="text-xs font-light tracking-[8px]">TESTIMONIALS</h5>
           <h2 className="text-[50px] font-medium">
             Client <i className="text-primary font-thin">Reviews</i>{" "}
@@ -78,13 +78,11 @@ const Reviews = () => {
                         <div className="col-span-3">
                           <div className="px-16 bg-card rounded-[30px] flex justify-center items-center h-[300px]">
                             <Image src={profile} alt="" />
-                            <p className="font-light text-body ">
-                              {review.review}
-                            </p>
+                            <p className="font-light  ">{review.review}</p>
                           </div>
                         </div>
                         <div className="font-light px-5 py-[30px]  flex flex-col justify-center items-center">
-                          <h5 className="uppercase text-xs text-body   mb-2 tracking-[8px]">
+                          <h5 className="uppercase text-xs    mb-2 tracking-[8px]">
                             {review.name}
                           </h5>
                           <h6 className="uppercase text-[10px] text-primary tracking-[8px]">

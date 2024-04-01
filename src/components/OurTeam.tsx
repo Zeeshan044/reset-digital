@@ -4,7 +4,7 @@ const OurTeam = () => {
   return (
     <div className="px-[112px] dark:text-white">
       <div className=" flex flex-col items-center">
-        <h5 className=" text-xs font-light dark:text-secondary-light mb-4 tracking-widest">
+        <h5 className=" text-xs font-light  mb-4 tracking-widest">
           WHO WE ARE
         </h5>
         <h2 className="text-[50px] font-medium mb-[42px]">

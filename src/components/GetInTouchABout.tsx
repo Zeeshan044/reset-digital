@@ -19,7 +19,7 @@ const GetInTouchABout = () => {
             Let&apos;s Start
             <i className=" font-thin text-primary -mt-5"> Your Project</i>
           </h2>
-          <p className=" text-base font-light text-center text-body  ">
+          <p className=" text-base font-light text-center   ">
             The customer is very important, the customer will be followed by the
             customer. Vestibule valley
           </p>

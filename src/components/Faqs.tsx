@@ -78,7 +78,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="dark:text-white text-primary-faq custom-container">
+    <div className="dark:text-white text-primary-faq container-custom">
       <div className="flex justify-between  font-font-montserrat px-24 py-8 dark:border-none">
         <div className="w-80 ">
           <div className="flex gap-[18px] mb-[26px] items-center">

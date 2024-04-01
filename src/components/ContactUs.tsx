@@ -3,7 +3,7 @@ import fadeInMotion from "./hoc/fade-in-motion";
 
 const ContactUs = () => {
   return (
-    <div className="container-small mt-[68px] pb-[284px]">
+    <div className="container-custom-sm mt-[68px] pb-[284px]">
       <div className=" bg-card py-20 px-[70px] flex flex-col gap-8">
         <div className=" gap-4 flex flex-col items-center px-[30px]">
           <h5 className=" font-light text-xs text-secondary-light tracking-[8px]">
@@ -13,7 +13,7 @@ const ContactUs = () => {
             Request a Free{" "}
             <i className=" text-primary font-thin">Consultation</i>
           </h2>
-          <p className=" font-light text-base text-body  text-center px-[239px]">
+          <p className=" font-light text-base   text-center px-[239px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             convallis.
           </p>

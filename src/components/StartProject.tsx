@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 const StartProject = () => {
   return (
-    <div className="max-w-6xl mx-auto py-24 text-body">
+    <div className="max-w-6xl mx-auto py-24 ">
       <div className="bg-card pl-40 py-[90px] rounded-[30px] flex flex-col items-start relative overflow-hidden">
         <div className="flex flex-col items-center">
           <h5 className="text-xs font-light tracking-[8px]">GET IN TOUCH</h5>

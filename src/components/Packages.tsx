@@ -4,7 +4,7 @@ const Packages = () => {
   return (
     <div className=" max-w-5xl mx-auto dark:text-white">
       <div className=" flex flex-col items-center pb-[66px] mt-[68px] ">
-        <h5 className=" text-xs font-light dark:text-secondary-light text-secondary-dark mb-4 tracking-widest">
+        <h5 className=" text-xs font-light  text-secondary-dark mb-4 tracking-widest">
           OPTIONS
         </h5>
         <h2 className=" text-6xl font-medium mb-4">
@@ -21,19 +21,15 @@ const Packages = () => {
             Basic Branding Package
           </h4>
           <h2 className=" text-xl my-8 text-secondary-light ">$ 599.00 CAD</h2>
-          <p className=" text-base text-body  text-center">
+          <p className=" text-base   text-center">
             Ideal for startups and small businesses seeking to establish a
             strong brand identity.
           </p>
-          <p className=" text-base text-body  mt-8 mb-[13px]">
-            Custom Logo Design
-          </p>
+          <p className=" text-base   mt-8 mb-[13px]">Custom Logo Design</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">Brand Color Palette</p>
+          <p className=" text-base   my-[13px]">Brand Color Palette</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">
-            Basic Brand Style Guide
-          </p>
+          <p className=" text-base   my-[13px]">Basic Brand Style Guide</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full pb-3" />
           <button className=" text-center rounded-full bg-primary text-[#1D2025] mt-8 px-6 py-3 text-sm">
             Get Started
@@ -46,17 +42,15 @@ const Packages = () => {
           <h2 className=" text-xl my-8 text-secondary-light ">
             $ 1,499.00 CAD
           </h2>
-          <p className=" text-base text-body  text-center">
+          <p className=" text-base   text-center">
             Perfect for businesses looking for a user-friendly and visually
             appealing website.
           </p>
-          <p className=" text-base text-body  mt-8 mb-[13px]">
-            Custom Website Design
-          </p>
+          <p className=" text-base   mt-8 mb-[13px]">Custom Website Design</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">SEO Optimization</p>
+          <p className=" text-base   my-[13px]">SEO Optimization</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">10 Pages</p>
+          <p className=" text-base   my-[13px]">10 Pages</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full pb-3" />
           <button className=" text-center rounded-full bg-primary text-[#1D2025] mt-8 px-6 py-3 text-sm">
             Get Started
@@ -69,19 +63,17 @@ const Packages = () => {
           <h2 className=" text-xl my-8 text-secondary-light ">
             $ 2,399.00 CAD
           </h2>
-          <p className=" text-base text-body  text-center">
+          <p className=" text-base   text-center">
             An all-in-one package for businesses looking for a complete design
             and marketing solution.
           </p>
-          <p className=" text-base text-body  mt-8 mb-[13px]">
+          <p className=" text-base   mt-8 mb-[13px]">
             Website Design & Development
           </p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">
-            Social Media Graphics
-          </p>
+          <p className=" text-base   my-[13px]">Social Media Graphics</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full" />
-          <p className=" text-base text-body  my-[13px]">SEO Services</p>
+          <p className=" text-base   my-[13px]">SEO Services</p>
           <hr className="border-b-1 border-[#999999] border-opacity-30 w-full pb-3" />
           <button className=" text-center rounded-full bg-primary text-[#1D2025] mt-8 px-6 py-3 text-sm">
             Get Started

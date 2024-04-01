@@ -1,15 +1,11 @@
 import React from "react";
-import facebook from "@/assets/images/facebook.svg";
-import insta from "@/assets/images/insta.svg";
-import twitter from "@/assets/images/twitter.svg";
-import youtube from "@/assets/images/youtube.svg";
-import Image from "next/image";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Button from "./ui/button";
 
 const Links = [
   {
-    title: "Main",
+    title: "Services",
     links: [
       { title: "Home", link: "" },
       { title: "About", link: "" },
@@ -20,7 +16,7 @@ const Links = [
     ],
   },
   {
-    title: "Other Pages",
+    title: "Insights",
     links: [
       { title: "Packages", link: "" },
       { title: "Packages Single", link: "" },
@@ -31,7 +27,7 @@ const Links = [
     ],
   },
   {
-    title: "Utilities",
+    title: "Company",
     links: [
       { title: "Style Guide", link: "" },
       { title: "Licenses", link: "" },
@@ -45,16 +41,42 @@ const Links = [
 
 const Footer = () => {
   return (
-    <div className="max-w-7xl mx-auto pt-20 dark:text-secondary-light">
-      <div className="grid grid-cols-2">
-        <div>
+    <div className="max-w-7xl mx-auto pt-20 ">
+      <div className="grid md:grid-cols-3 2xl:grid-cols-6 gap-8 md:gap-14">
+        <div className="md:col-span-2">
           <p className=" font-semibold text-base mb-[17px] dark:text-white">
             RESET DIGITAL
           </p>
-          <p className="text-base font-light mb-3 text-body ">
-            Where Creativity Meets Innovation.
+          <p className="text-xs font-light mb-3">
+            Where Creativity Meets Innovation. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Porro, ullam?
           </p>
-          <div className="flex gap-8 mt-4  text-body">
+        </div>
+        {Links.map((link, index) => (
+          <div key={link.title} className="font-open-sans">
+            <h4 className="text-4 font-normal mb-[10px]">{link.title}</h4>
+            <ul className="flex flex-col gap-y-2 text-[15px] font-light">
+              {link.links.map((item) => (
+                <li key={item.title}>
+                  <a
+                    href={item.link}
+                    className="hover:text-primary cursor-pointer duration-200"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <div>
+          <h4 className="text-4 font-normal mb-[10px]">Contact</h4>
+          <Button className="w-full max-w-64">Book A Call</Button>
+          <p className="text-xs mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
+            sequi quas error
+          </p>
+          <div className="flex gap-8 mt-4">
             <a href="">
               <FaFacebook className="hover:text-primary duration-200 hover:scale-125" />
             </a>
@@ -69,28 +91,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-3 text-body ">
-          {Links.map((link, index) => (
-            <div key={link.title} className="font-open-sans">
-              <h4 className="text-4 font-normal mb-[10px]">{link.title}</h4>
-              <ul className="flex flex-col gap-y-2 text-[15px] font-light">
-                {link.links.map((item) => (
-                  <li key={item.title}>
-                    <a
-                      href={item.link}
-                      className="hover:text-primary cursor-pointer duration-200"
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+        {/* <div className="grid grid-cols-3">
+        </div> */}
       </div>
       <hr className="bg-[#786DFF4D]/30 w-full mt-10" />
-      <div className="text-[15px] font-light pb-[71px] mt-10 dark:text-white flex justify-between">
+      <div className="text-sm font-light pb-10 pt-10 dark:text-white text-center">
         <p className=" ">© 2024 Reset Digital. All Rights Reserved.</p>
       </div>
     </div>

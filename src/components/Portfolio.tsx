@@ -25,7 +25,7 @@ const Portfolio = () => {
             <h4 className="text-[#F5F5F5] text-[20px] font-medium left-0">
               sign Showcase
             </h4>
-            <p className=" text-body  text-base font-light">
+            <p className="   text-base font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
@@ -49,7 +49,7 @@ const Portfolio = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body  text-base font-light">
+              <p className="   text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -70,7 +70,7 @@ const Portfolio = () => {
               <h4 className="text-secondary-light text-[16px] font-medium">
                 Design Excellence
               </h4>
-              <p className="text-body  text-base font-light">
+              <p className="  text-base font-light">
                 Lorem ipsum dolor sit amet,
               </p>
             </div>

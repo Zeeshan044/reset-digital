@@ -4,13 +4,13 @@ import { Link } from "react-scroll";
 
 const ChooseServices = () => {
   return (
-    <div className="dark:text-secondary-light text-body">
+    <div className=" ">
       <div className="border border-primary-dark">
         <div className="flex flex-col items-center py-12">
           <h2 className="text-5xl font-bold mb-2">
             TAKE THE <span className="font-thin text-primary"> FIRST STEP</span>
           </h2>
-          <p className="text-body  text-2xl font-medium">
+          <p className="  text-2xl font-medium">
             Choose the plan best suited for your needs.
           </p>
           <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>

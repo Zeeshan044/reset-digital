@@ -8,7 +8,7 @@ import { ScrollerMotion } from "scroller-motion";
 const About = () => {
   return (
     <main className="min-h-screen bg-white dark:bg-gradient-dark">
-      <div className="custom-container">
+      <div className="container-custom">
         <AppNav />
         <Packages />
         {/* <GetInTouchABout /> */}

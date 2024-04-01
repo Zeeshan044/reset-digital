@@ -31,7 +31,7 @@
     --color-primary: #82E8F2;
     --color-primary-foreground: #111111;
     --color-background: #1D2025;
-    --color-body: #D0D0D0;
+    --color-body: #f1f1f1;
     --color-card: #292D32;
   }
 
@@ -53,18 +53,21 @@
 
   body {
     font-family: "Archivo", sans-serif;
+    color: theme('colors.body.DEFAULT');
   }
 
-  .custom-container {
+  .container-custom {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 2rem;
   }
 
-  .container-small {
+  .container-custom-sm {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 2rem;
   }
 
   .bg-gradient-dark {
