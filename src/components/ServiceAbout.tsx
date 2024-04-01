@@ -4,10 +4,10 @@ import AboutImg from "@/assets/images/serviceAbout.png";
 
 const ServiceAbout = () => {
   return (
-    <div className=" dark:text-secondary-light text-body-dark">
+    <div className=" dark:text-secondary-light text-body">
       <div className=" flex flex-col items-center mt-8">
         <h2 className=" text-9xl font-semibold mb-8">
-          Our <i className=" font-thin text-primary-dark">Services</i>
+          Our <i className=" font-thin text-primary">Services</i>
         </h2>
         <i className=" font-medium text-3xl">Where vision comes to Life.</i>
         <Image src={AboutImg} alt="about" />

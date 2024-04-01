@@ -19,7 +19,7 @@ const Foundation = () => {
               <p className=" text-base font-light">INNOVATE</p>
             </div>
             <div className=" flex gap-3 px-[131px] items-center justify-center">
-              <DoubleArrow className="text-primary-dark" />
+              <DoubleArrow className="text-primary" />
               <p className=" text-base font-light">ELEVATE</p>
             </div>
           </div>

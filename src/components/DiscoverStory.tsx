@@ -5,9 +5,9 @@ import Image from "next/image";
 const DiscoveryStore = () => {
   return (
     <div className=" container-small pb-[112px]">
-      <div className="text-body-dark dark:text-body font-light flex gap-[102px] justify-between mb-12">
+      <div className="text-body  font-light flex gap-[102px] justify-between mb-12">
         <div className=" w-[397px]">
-          <h5 className="text-xs font-light tracking-widest text-body-dark dark:text-secondary-light">
+          <h5 className="text-xs font-light tracking-widest text-body dark:text-secondary-light">
             GET TO KNOW
           </h5>
           <p className=" text-base mt-4">
@@ -21,14 +21,14 @@ const DiscoveryStore = () => {
           </p>
         </div>
         <div>
-          <h2 className="text-6xl font-medium pr-20 text-body-dark dark:text-body">
-            Discover <i className=" text-primary-dark font-thin">Our Story</i>
+          <h2 className="text-6xl font-medium pr-20 text-body ">
+            Discover <i className=" text-primary font-thin">Our Story</i>
           </h2>
         </div>
       </div>
       <div className="flex justify-between gap-10">
         <Image src={discoverImg} alt="" className=" rounded-[20px]" />
-        <div className=" font-light text-base text-body-dark dark:text-body gap-[26px] ">
+        <div className=" font-light text-base text-body  gap-[26px] ">
           <p className=" mb-[26px]">
             Founded in 2024, Reset Digital was born out of a shared love for
             design, technology, and the limitless possibilities of the web.

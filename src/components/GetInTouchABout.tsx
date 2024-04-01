@@ -17,15 +17,15 @@ const GetInTouchABout = () => {
           </h5>
           <h2 className=" text-6xl font-medium text-center mb-[18px]">
             Let&apos;s Start
-            <i className=" font-thin text-primary-dark -mt-5"> Your Project</i>
+            <i className=" font-thin text-primary -mt-5"> Your Project</i>
           </h2>
-          <p className=" text-base font-light text-center text-body-dark dark:text-body ">
+          <p className=" text-base font-light text-center text-body  ">
             The customer is very important, the customer will be followed by the
             customer. Vestibule valley
           </p>
           <Link
             href="/contact"
-            className=" bg-primary-dark py-3 px-6 rounded-full mt-8 text-black"
+            className=" bg-primary py-3 px-6 rounded-full mt-8 text-black"
           >
             Get In Touch
           </Link>

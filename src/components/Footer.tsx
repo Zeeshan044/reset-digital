@@ -51,10 +51,10 @@ const Footer = () => {
           <p className=" font-semibold text-base mb-[17px] dark:text-white">
             RESET DIGITAL
           </p>
-          <p className="text-base font-light mb-3 text-body-dark dark:text-body">
+          <p className="text-base font-light mb-3 text-body ">
             Where Creativity Meets Innovation.
           </p>
-          <div className="flex gap-8 mt-4 dark:text-body text-body-dark">
+          <div className="flex gap-8 mt-4  text-body">
             <a href="">
               <FaFacebook className="hover:text-primary duration-200 hover:scale-125" />
             </a>
@@ -69,7 +69,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-3 text-body-dark dark:text-body">
+        <div className="grid grid-cols-3 text-body ">
           {Links.map((link, index) => (
             <div key={link.title} className="font-open-sans">
               <h4 className="text-4 font-normal mb-[10px]">{link.title}</h4>

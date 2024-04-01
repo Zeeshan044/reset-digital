@@ -16,7 +16,7 @@ import { ScrollerMotion } from "scroller-motion";
 const Home = () => {
   return (
     <ScrollerMotion>
-      <main className="min-h-screen bg-white dark:bg-background-dark">
+      <main className="min-h-screen bg-white dark:bg-background">
         <div>
           <AppNav />
           <About />

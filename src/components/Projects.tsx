@@ -11,11 +11,11 @@ const Projects = () => {
     <div className="px-[83px] py-[112px] dark:text-white">
       <div className="flex justify-between mb-[54px]">
         <h2 className="text-[50px] font-medium mt-6">
-          Explore our <i className="text-primary-dark font-thin">Projects</i>{" "}
+          Explore our <i className="text-primary font-thin">Projects</i>{" "}
         </h2>
         <div className="font-light w-[331px]">
           <h5 className="text-sm tracking-widest">Artistry & Functionality</h5>
-          <p className="text-base mt-4 dark:text-body-dark dark:text-body">
+          <p className="text-base mt-4  ">
             Crafting unique, innovative solutions that transcend the ordinary.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body-dark dark:text-body text-base font-light">
+              <p className=" text-body  text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -57,7 +57,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body-dark dark:text-body text-base font-light">
+              <p className=" text-body  text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -78,7 +78,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body-dark dark:text-body text-base font-light">
+              <p className=" text-body  text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>
@@ -98,7 +98,7 @@ const Projects = () => {
               <h4 className="text-[#F5F5F5] text-[32px] font-medium">
                 Innovative Design Portfolio
               </h4>
-              <p className=" text-body-dark dark:text-body text-base font-light">
+              <p className=" text-body  text-base font-light">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </div>

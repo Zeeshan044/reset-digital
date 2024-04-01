@@ -83,7 +83,7 @@ const Faqs = () => {
         <div className="w-80 ">
           <div className="flex gap-[18px] mb-[26px] items-center">
             <hr className="bg-black dark:bg-white w-6 h-1" />
-            <span className="font-normal text-xl dark:text-primary-dark text-[#1E1E1E]">
+            <span className="font-normal text-xl dark:text-primary text-[#1E1E1E]">
               FAQS
             </span>
           </div>
@@ -115,7 +115,7 @@ const Faqs = () => {
                   <IoIosArrowDown size={25} />
                 )}
               </div>
-              <hr className="dark:bg-[#CACACA] bg-primary-faq border-1" />
+              <hr className="dark:bg-[#CACACA] bg-primary border-1" />
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div

@@ -11,7 +11,7 @@ import { ScrollerMotion } from "scroller-motion";
 
 const Services = () => {
   return (
-    <main className="min-h-screen bg-background dark:bg-background-dark">
+    <main className="min-h-screen bg-background dark:bg-background">
       <div className="custom-container">
         <AppNav />
         <ServiceAbout />

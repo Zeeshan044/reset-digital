@@ -18,6 +18,24 @@
     font-style: normal;
   }
 
+
+  :root {
+    --color-primary: #82E8F2;
+    --color-primary-foreground: #111111;
+    --color-background: #FFFFFF;
+    --color-body: #111111;
+    --color-card: #FFFFFF;
+  }
+  
+  .dark {
+    --color-primary: #82E8F2;
+    --color-primary-foreground: #111111;
+    --color-background: #1D2025;
+    --color-body: #D0D0D0;
+    --color-card: #292D32;
+  }
+
+
   /* Target the entire scrollbar (for WebKit browsers) */
   ::-webkit-scrollbar {
     width: 10px;
@@ -30,7 +48,7 @@
 
   /* Target the scrollbar thumb */
   ::-webkit-scrollbar-thumb {
-    background-color: theme('colors.background.dark');
+    background-color: theme('colors.background');
   }
 
   body {

@@ -9,14 +9,14 @@ const HomeAbout = () => {
     <div className="max-w-7xl mx-auto px-10">
       <div className="grid grid-cols-2 items-center gap-x-5 py-12 min-h-fit h-[calc(100vh-92px)] max-h-[800px]">
         <div>
-          <div className="h-1 bg-primary-dark w-12 mb-4"></div>
+          <div className="h-1 bg-primary w-12 mb-4"></div>
           <motion.h2
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5 }}
             className="leading-snug text-5xl font-extrabold dark:text-white font-montserrat"
           >
-            <span className="bg-primary-dark text-black">Reset Digital,</span>
+            <span className="bg-primary text-black">Reset Digital,</span>
             <br />
             your premier Toronto-based web consultancy firm.
           </motion.h2>
@@ -24,7 +24,7 @@ const HomeAbout = () => {
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-base font-normal text-black dark:text-primary-dark pt-5 font-montserrat"
+            className="text-base font-normal text-black dark:text-primary pt-5 font-montserrat"
           >
             A leading{" "}
             <span className="underline italic">web consultancy firm</span>{" "}

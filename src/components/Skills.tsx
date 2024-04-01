@@ -11,7 +11,7 @@ import Image from "next/image";
 const Skills = () => {
   return (
     <div className="container-small py-24">
-      <div className="pl-24 flex justify-between text-body-dark dark:text-body">
+      <div className="pl-24 flex justify-between text-body ">
         <div className="max-w-56 font-light">
           <h5 className="text-xs mb-4 tracking-[8px]">Get To Know</h5>
           <p className="text-base tracking-[1px] font-light">
@@ -21,8 +21,7 @@ const Skills = () => {
         </div>
         <div className="mt-10">
           <h2 className=" text-6xl font-medium">
-            Visualize{" "}
-            <i className=" text-primary-dark font-thin"> Our Skills</i>
+            Visualize <i className=" text-primary font-thin"> Our Skills</i>
           </h2>
         </div>
       </div>
@@ -30,7 +29,7 @@ const Skills = () => {
         <div className="">
           <Image src={Skill} alt="" className="" />
         </div>
-        <div className="flex flex-col justify-around text-body-dark dark:text-body">
+        <div className="flex flex-col justify-around text-body ">
           <div className="mt-10 text-end">
             <h4 className="font-medium text-3xl border-b-2 pb-1 border-primary">
               Innovative

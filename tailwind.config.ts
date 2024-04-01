@@ -11,23 +11,14 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#82E8F2",
-          dark: "#82E8F2",
-          grey: "#D0D0D0",
-          faq: "#111A21",
+          DEFAULT: "var(--color-primary)",
+          foreground: "var(--color-primary-foreground)",
         },
-        background: {
-          DEFAULT: "#FFFFFF",
-          dark: "#1D2025",
-        },
+        background: "var(--color-background)",
         body: {
-          DEFAULT: "#D0D0D0",
-          dark: "#111111",
+          DEFAULT: "var(--color-body)",
         },
-        card: {
-          DEFAULT: "#FFFFFF",
-          dark: "#292D32",
-        },
+        card: "var(--color-card)",
       },
       fontFamily: {
         "open-sans": ["Open Sans", "sans-serif"],

@@ -8,13 +8,14 @@ import Image from "next/image";
 const PartnerSection = () => {
   return (
     <div className="max-w-7xl mx-auto py-24 px-10">
-      <div className="flex justify-between mb-14 dark:text-body text-body-dark">
+      <div className="flex justify-between mb-14  text-body">
         <h2 className="text-6xl font-medium mt-14">
-          Trusted by <i className="bg-primary text-body-dark">Great Brands</i>
+          Trusted by{" "}
+          <i className="bg-primary text-primary-foreground">Great Brands</i>
         </h2>
         <div className="font-light w-[331px] ">
           <h2 className="text-xs tracking-widest">OUR CLIENTS</h2>
-          <p className="text-base mt-4 dark:text-white text-body-dark">
+          <p className="text-base mt-4 dark:text-white text-body">
             The client is paramount, and we prioritizededicated support for our
             clients. Welcome to the forefront of exceptional service at Reset
             Digital.
