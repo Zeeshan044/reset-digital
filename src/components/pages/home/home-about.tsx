@@ -50,7 +50,7 @@ const HomeAbout = () => {
           <Image
             src={HeroLogo}
             alt=""
-            className="absolute top-0 right-0 opacity-25 -z-10 max-w-96 w-full"
+            className="absolute top-0 right-0 opacity-25 -z-10 max-w-96 w-full lg:hidden"
           />
         </div>
         <div className="items-start hidden lg:flex overflow-hidden">
