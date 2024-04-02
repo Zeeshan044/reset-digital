@@ -61,17 +61,29 @@ const AppNav = () => {
                   className="h-6 w-6 hover:text-primary duration-100"
                 />
               </div>
-              <div className="flex flex-col gap-4 p-4">
-                <Link href="/" className="hover:text-primary duration-200">
+              <div className="flex flex-col gap-4 px-8 py-6">
+                <Link
+                  href="/"
+                  className="hover:text-primary duration-200 border-primary border-b pb-2 pl-2 border-l"
+                >
                   HOME
                 </Link>
-                <Link href="/" className="hover:text-primary duration-200">
+                <Link
+                  href="/"
+                  className="hover:text-primary duration-200 border-primary border-b pb-2 pl-2 border-l"
+                >
                   ABOUT
                 </Link>
-                <Link href="/" className="hover:text-primary duration-200">
+                <Link
+                  href="/"
+                  className="hover:text-primary duration-200 border-primary border-b pb-2 pl-2 border-l"
+                >
                   SERVICES
                 </Link>
-                <Link href="/" className="hover:text-primary duration-200">
+                <Link
+                  href="/"
+                  className="hover:text-primary duration-200 border-primary border-b pb-2 pl-2 border-l"
+                >
                   CONTACT
                 </Link>
               </div>

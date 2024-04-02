@@ -23,6 +23,7 @@
     --color-primary: #82E8F2;
     --color-primary-foreground: #111111;
     --color-background: #FFFFFF;
+    --color-on-background: #111111;
     --color-body: #111111;
     --color-card: #FFFFFF;
   }
@@ -31,6 +32,7 @@
     --color-primary: #82E8F2;
     --color-primary-foreground: #111111;
     --color-background: #1D2025;
+    --color-on-background: #f1f1f1;
     --color-body: #f1f1f1;
     --color-card: #292D32;
   }
@@ -43,12 +45,12 @@
 
   /* Target the scrollbar track */
   ::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
+    background-color: var(--color-background);
   }
 
   /* Target the scrollbar thumb */
   ::-webkit-scrollbar-thumb {
-    background-color: theme('colors.background');
+    background-color: var(--color-on-background);
   }
 
   body {

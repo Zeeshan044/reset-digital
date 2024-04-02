@@ -1,6 +1,6 @@
 import React from "react";
 import AppNav from "@/components/layout/app-nav";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/app-footer";
 import GetInTouchABout from "@/components/GetInTouchABout";
 import Packages from "@/components/Packages";
 import { ScrollerMotion } from "scroller-motion";
