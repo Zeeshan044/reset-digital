@@ -3,9 +3,9 @@ import Project1 from "@/assets/images/project.png";
 import Project2 from "@/assets/images/project2.png";
 import Image from "next/image";
 import Link from "next/link";
-const StartProject = () => {
+const CTASection = () => {
   return (
-    <div className="max-w-6xl mx-auto px-8 xl:px-0 py-24 ">
+    <div className="max-w-7xl mx-auto py-24 px-10">
       <div className="bg-card md:pl-40 py-24 rounded-[30px] flex flex-col items-center md:items-start relative overflow-hidden z-20">
         <div className="flex flex-col items-center">
           <h5 className="text-xs font-light tracking-[8px]">GET IN TOUCH</h5>
@@ -39,4 +39,4 @@ const StartProject = () => {
   );
 };
 
-export default StartProject;
+export default CTASection;

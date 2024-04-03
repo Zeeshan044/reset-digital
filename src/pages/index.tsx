@@ -6,7 +6,7 @@ import PartnerSection from "@/components/pages/partner-section";
 import Reviews from "@/components/pages/reviews-section";
 import Skills from "@/components/pages/home/home-skills";
 import Faqs from "@/components/pages/faq-section";
-import StartProject from "@/components/pages/cta-section";
+import CTASection from "@/components/pages/cta-section";
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
       {/* <Reviews /> */}
       <Skills />
       <Faqs />
-      <StartProject />
+      <CTASection />
     </>
   );
 };

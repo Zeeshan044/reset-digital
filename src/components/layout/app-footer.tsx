@@ -42,7 +42,7 @@ const Links = [
 const Footer = () => {
   return (
     <div className="container-custom pt-20">
-      <div className="grid md:grid-cols-3 2xl:grid-cols-6 gap-8 md:gap-14">
+      <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-14">
         <div className="md:col-span-2">
           <p className=" font-semibold text-base mb-[17px] dark:text-white">
             RESET DIGITAL
@@ -76,7 +76,7 @@ const Footer = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
             sequi quas error
           </p>
-          <div className="flex gap-8 mt-4">
+          <div className="flex gap-3 xl:gap-8 mt-4">
             <a href="">
               <FaFacebook className="hover:text-primary duration-200 hover:scale-125" />
             </a>

@@ -45,7 +45,7 @@ const Reviews = () => {
         <div className="flex flex-col items-center justify-center gap-y-4 mb-12  ">
           <h5 className="text-xs font-light tracking-[8px]">TESTIMONIALS</h5>
           <h2 className="text-[50px] font-medium">
-            Client <i className="text-primary font-thin">Reviews</i>{" "}
+            Client <i className="bg-primary text-primary-foreground">Reviews</i>{" "}
           </h2>
         </div>
         <div className="flex">

@@ -1,3 +1,4 @@
+import CTASection from "@/components/pages/cta-section";
 import ServiceSectionSlide from "@/components/pages/services/service-slide";
 
 const SECTIONS = [
@@ -77,6 +78,8 @@ const Services = () => {
           />
         ))}
       </section>
+
+      <CTASection />
     </>
   );
 };
