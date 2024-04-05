@@ -4,7 +4,7 @@ const Packages = () => {
   return (
     <div className=" max-w-5xl mx-auto dark:text-white">
       <div className=" flex flex-col items-center pb-[66px] mt-[68px] ">
-        <h5 className=" text-xs font-light  text-secondary-dark mb-4 tracking-widest">
+        <h5 className=" text-xs font-light  text-secondary-dark mb-4 tracking-long">
           OPTIONS
         </h5>
         <h2 className=" text-6xl font-medium mb-4">

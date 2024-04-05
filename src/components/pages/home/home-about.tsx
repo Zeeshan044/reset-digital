@@ -9,15 +9,15 @@ import Image from "next/image";
 
 const HomeAbout = () => {
   return (
-    <div className="max-w-7xl mx-auto px-10">
-      <div className="grid lg:grid-cols-2 items-center gap-x-5 py-12 min-h-fit h-[calc(100vh-92px)] max-h-[800px]">
+    <div className="px-10">
+      <div className="grid lg:grid-cols-2 items-center gap-x-5 min-h-[calc(100vh-92px)]">
         <div className="relative z-20">
           <div className="h-1 bg-primary w-12 mb-4"></div>
           <motion.h2
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5 }}
-            className="leading-snug text-3xl md:text-5xl font-extrabold dark:text-white font-montserrat"
+            className="!leading-snug text-3xl md:text-5xl font-extrabold dark:text-white font-montserrat"
           >
             <span className="bg-primary text-black">Reset Digital,</span>
             <br />

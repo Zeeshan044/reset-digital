@@ -4,35 +4,48 @@ import scale from "@/assets/images/scale.png";
 import chain from "@/assets/images/chain.png";
 import load from "@/assets/images/load.png";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const PartnerSection = () => {
   return (
-    <div className="max-w-7xl mx-auto py-24 px-10">
-      <div className="flex justify-between flex-wrap gap-8 mb-14">
-        <h2 className="text-5xl md:text-6xl mt-14">
-          Trusted by{" "}
-          <i className="bg-primary text-primary-foreground whitespace-nowrap">
-            Great Brands
-          </i>
-        </h2>
-        <div className="font-light w-[331px] ">
-          <h2 className="text-xs tracking-widest">OUR CLIENTS</h2>
+    <div className="p-section flex flex-col gap-12 py-24">
+      <div className="flex justify-between gap-8 mb-8">
+        <div className="font-light max-w-lg">
+          <h5 className="text-xs tracking-long">OUR CLIENTS</h5>
           <p className="text-base mt-4 dark:text-white ">
             The client is paramount, and we prioritizededicated support for our
             clients. Welcome to the forefront of exceptional service at Reset
             Digital.
           </p>
         </div>
+        <div>
+          <h2 className="text-5xl md:text-6xl">
+            Trusted by{" "}
+            <i className="bg-primary text-primary-foreground whitespace-nowrap">
+              Great Brands
+            </i>
+          </h2>
+        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 justify-between gap-x-12 md:gap-x-28 md:px-20">
-        <Image src={trace} alt="Trace" />
-        <Image src={scale} alt="Scale" />
-        <Image src={chain} alt="Chain" />
-        <Image src={load} alt="Load" />
-        <Image src={trace} alt="Trace" />
-        <Image src={scale} alt="Scale" />
-        <Image src={chain} alt="Chain" />
-        <Image src={load} alt="Load" />
+      <div className="grow">
+        <Marquee autoFill>
+          <Image src={trace} alt="Trace" className="mx-8" />
+          <Image src={scale} alt="Scale" className="mx-8" />
+          <Image src={chain} alt="Chain" className="mx-8" />
+          <Image src={load} alt="Load" className="mx-8" />
+        </Marquee>
+        <Marquee autoFill>
+          <Image src={load} alt="Load" className="mx-8" />
+          <Image src={chain} alt="Chain" className="mx-8" />
+          <Image src={scale} alt="Scale" className="mx-8" />
+          <Image src={trace} alt="Trace" className="mx-8" />
+        </Marquee>
+        <Marquee autoFill>
+          <Image src={load} alt="Load" className="mx-8" />
+          <Image src={scale} alt="Scale" className="mx-8" />
+          <Image src={trace} alt="Trace" className="mx-8" />
+          <Image src={chain} alt="Chain" className="mx-8" />
+        </Marquee>
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ import Link from "next/link";
 const CTASection = () => {
   return (
     <div className="max-w-7xl mx-auto py-24 px-10">
-      <div className="bg-card md:pl-40 py-24 rounded-[30px] flex flex-col items-center md:items-start relative overflow-hidden z-20">
+      <div className="bg-card md:pl-40 py-24 flex flex-col items-center md:items-start relative overflow-hidden z-20">
         <div className="flex flex-col items-center">
-          <h5 className="text-xs font-light tracking-[8px]">GET IN TOUCH</h5>
+          <h5 className="text-xs font-light tracking-long">GET IN TOUCH</h5>
           <h2 className="text-5xl md:text-6xl font-medium text-center my-[18px]">
             Let&apos;s Start <br />
             <i className=" font-thin text-primary -mt-5"> Your Project</i>

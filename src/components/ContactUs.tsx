@@ -8,7 +8,7 @@ const ContactUs = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col justify-center gap-y-4 mb-12">
-              <h5 className="text-xs font-light tracking-[8px] uppercase">
+              <h5 className="text-xs font-light tracking-long uppercase">
                 get in touch
               </h5>
               <h2 className="text-4xl md:text-5xl font-medium capitalize">

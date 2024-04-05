@@ -41,7 +41,7 @@ const Links = [
 
 const Footer = () => {
   return (
-    <div className="container-custom pt-20">
+    <div className="pt-20 p-section">
       <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-14">
         <div className="md:col-span-2">
           <p className=" font-semibold text-base mb-[17px] dark:text-white">

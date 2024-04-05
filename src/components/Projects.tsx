@@ -14,7 +14,7 @@ const Projects = () => {
           Explore our <i className="text-primary font-thin">Projects</i>{" "}
         </h2>
         <div className="font-light w-[331px]">
-          <h5 className="text-sm tracking-widest">Artistry & Functionality</h5>
+          <h5 className="text-sm tracking-long">Artistry & Functionality</h5>
           <p className="text-base mt-4  ">
             Crafting unique, innovative solutions that transcend the ordinary.
           </p>

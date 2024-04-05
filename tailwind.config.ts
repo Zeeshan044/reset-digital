@@ -31,6 +31,9 @@ const config: Config = {
           "linear-gradient(3.95deg, #82E8F2 -19.7%, #1D2025 96.77%)",
         "gradient-system-light": "#ffffff",
       },
+      letterSpacing: {
+        long: "8px",
+      },
     },
   },
   plugins: [],

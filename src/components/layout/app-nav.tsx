@@ -16,8 +16,8 @@ const AppNav = () => {
   const router = useRouter();
   return (
     <>
-      <div className="container-custom">
-        <nav className="flex justify-between items-center h-[92px] 2xl:px-4 dark:text-white">
+      <div className="p-section">
+        <nav className="flex justify-between items-center h-[92px] dark:text-white">
           <div>
             <h2 className="text-2xl font-semibold">RESET DIGITAL</h2>
           </div>

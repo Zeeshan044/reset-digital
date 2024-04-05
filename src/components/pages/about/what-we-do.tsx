@@ -36,11 +36,13 @@ const SKILLS = [
 function WhatWeDoSection() {
   return (
     <div>
-      <div className="container-custom py-24">
+      <div className="p-section py-24">
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-9">
           <div>
             <div className="flex flex-col justify-center gap-y-4 mb-12">
-              <h5 className="text-xs font-light tracking-[8px]">what we do</h5>
+              <h5 className="text-xs font-light tracking-long uppercase">
+                what we do
+              </h5>
               <h2 className="text-5xl font-medium">
                 Our <i className="bg-primary text-primary-foreground">Skills</i>{" "}
               </h2>
@@ -81,7 +83,7 @@ type Props = {
 };
 function SkillCard({ title, description }: Props) {
   return (
-    <div className="bg-card p-4 rounded-lg shadow-md h-full">
+    <div className="bg-card p-4 shadow-md h-full">
       <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
       <p className="">{description}</p>
     </div>

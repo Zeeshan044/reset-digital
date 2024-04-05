@@ -12,7 +12,7 @@ const GetInTouchABout = () => {
     >
       <div className=" flex bg-[#292D32] rounded-[30px] h-[430px]">
         <div className="  px-[68px] pt-[70px]  flex flex-col items-center relative overflow-hidden w-[452px]">
-          <h5 className=" text-secondary-light text-xs font-light tracking-widest">
+          <h5 className=" text-secondary-light text-xs font-light tracking-long">
             Get In Touch
           </h5>
           <h2 className=" text-6xl font-medium text-center mb-[18px]">

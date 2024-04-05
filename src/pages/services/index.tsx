@@ -53,11 +53,11 @@ const Services = () => {
   return (
     <>
       {/* Hero Intro */}
-      <section className="flex flex-col items-center justify-center py-20 container-custom-sm">
+      <section className="flex flex-col items-center justify-center py-20 p-section">
         <h1 className="text-7xl lg:text-9xl font-semibold text-center">
           Our <i className="font-thin text-primary">Services</i>
         </h1>
-        <p className=" text-center mt-8 lg:mt-16 lg:text-xl font-light">
+        <p className="max-w-5xl text-center mt-8 lg:mt-16 lg:text-xl font-light">
           Embark on a creative odyssey with Reset Digital. We create websites
           that aren’t just beautiful but also embody the essence of your brand.
           Powered by Webflow; elevated by our generative and 3D solutions: we
@@ -66,7 +66,7 @@ const Services = () => {
       </section>
 
       {/* Services Section */}
-      <section className="flex flex-col gap-y-32 lg:gap-y-40 my-20 container-custom">
+      <section className="flex flex-col gap-y-32 lg:gap-y-40 my-20 p-section">
         {SECTIONS.map((section, index) => (
           <ServiceSectionSlide
             key={section.number}

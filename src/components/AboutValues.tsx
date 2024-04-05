@@ -15,7 +15,7 @@ const AboutValues = () => {
           Our <i className="text-primary font-thin">Values</i>
         </h2>
         <div className="font-light w-[331px]  ">
-          <h2 className="text-xs tracking-widest ">WHAT WE BELIEVE</h2>
+          <h2 className="text-xs tracking-long ">WHAT WE BELIEVE</h2>
           <p className="text-base mt-4  ">
             The client is paramount, and we prioritize dedicated support for our
             clients. Welcome to the forefront of exceptional service at Reset

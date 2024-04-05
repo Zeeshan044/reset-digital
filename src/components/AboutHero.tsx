@@ -3,7 +3,7 @@ import AboutImg from "@/assets/images/about.png";
 import Image from "next/image";
 const AboutHero = () => {
   return (
-    <div className="container-custom">
+    <div className="p-section">
       <div className="text-4xl sm:text-7xl lg:text-9xl flex justify-around mt-8 mb-8 ">
         <h1 className="font-medium">ABOUT</h1>
         <div>
@@ -14,7 +14,7 @@ const AboutHero = () => {
         </div>
       </div>
       <div>
-        <Image src={AboutImg} alt="" className=" rounded-[30px]" />
+        <Image src={AboutImg} alt="" className="w-full" />
       </div>
     </div>
   );

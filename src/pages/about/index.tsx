@@ -11,13 +11,12 @@ const About = () => {
   return (
     <>
       <AboutHero />
-      <div className="lg:py-24">
-        <PartnerSection />
-      </div>
+      <div className="mt-24" />
+      <PartnerSection />
       {/* <AboutValues /> */}
       <WhatWeDoSection />
       <DiscoveryStory />
-      {/* <Reviews /> */}
+      <Reviews />
       <CTASection />
     </>
   );

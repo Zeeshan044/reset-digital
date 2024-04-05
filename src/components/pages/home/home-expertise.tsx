@@ -27,19 +27,13 @@ const ExpertiseData = [
 
 const HomeExpertise = () => {
   return (
-    <div className="max-w-5xl mx-auto px-8 lg:px-0 items-center">
-      <div className="py-20">
-        <div className="flex justify-between flex-wrap-reverse gap-y-8">
-          <div className="font-light max-w-sm">
-            <h5 className="text-xs mb-4 tracking-[8px] uppercase ">
+    <div className="p-section py-20 min-h-screen flex items-center">
+      <div className="flex gap-8 items-start">
+        <div className="flex flex-col gap-8">
+          <div>
+            <h5 className="text-xs mb-4 tracking-long uppercase ">
               Imagine & Design
             </h5>
-            <p className="text-base tracking-wide">
-              From brand development to captivating user experiences, We
-              specialize in turning concepts into compelling realities.
-            </p>
-          </div>
-          <div>
             <h2 className="text-5xl md:text-6xl mt-3">
               We Create{" "}
               <i className="bg-primary text-primary-foreground whitespace-nowrap">
@@ -47,8 +41,14 @@ const HomeExpertise = () => {
               </i>
             </h2>
           </div>
+          <div className="font-light max-w-sm">
+            <p className="text-base tracking-wide">
+              From brand development to captivating user experiences, We
+              specialize in turning concepts into compelling realities.
+            </p>
+          </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 lg:mt-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ExpertiseData.map((expertise, index) => (
             <ExpertiseCard
               key={index}
@@ -71,7 +71,7 @@ interface ExpertiseCardProps {
 
 function ExpertiseCard({ title, description, image }: ExpertiseCardProps) {
   return (
-    <div className="px-9 pt-8 pb-14 rounded-[32px] bg-card">
+    <div className="px-9 pt-8 pb-14 bg-card">
       <div className="aspect-square relative mx-auto mb-4">
         <Image
           src={image}

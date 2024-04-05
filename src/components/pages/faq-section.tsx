@@ -78,9 +78,9 @@ const Faqs = () => {
   };
 
   return (
-    <div className="dark:text-white text-primary-faq container-custom">
-      <div className="flex justify-between gap-8 flex-wrap font-montserrat xl:px-24 py-8 dark:border-none">
-        <div className="lg:w-80">
+    <div className="p-section min-h-screen flex items-center font-montserrat">
+      <div className="flex gap-8 flex-wrap grow">
+        <div className="lg:max-w-md">
           <div className="flex gap-[18px] mb-[26px] items-center">
             <hr className="bg-black dark:bg-white w-6 h-1" />
             <span className="font-normal text-xl dark:text-primary text-[#1E1E1E]">
@@ -99,7 +99,7 @@ const Faqs = () => {
             <Button variation="secondary">More FAQs</Button>
           </div>
         </div>
-        <div className="w-full lg:max-w-2xl flex flex-col gap-4">
+        <div className="flex flex-col gap-4 grow">
           {faqs.map((faq, index) => (
             <div className="border-b pb-4" key={index}>
               <div
