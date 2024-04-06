@@ -27,7 +27,7 @@ const HomeAbout = () => {
             initial={{ opacity: 0, translateX: -100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-normal text-black dark:text-primary pt-5 font-montserrat"
+            className="font-normal text-black text-primary pt-5 font-montserrat"
           >
             A leading{" "}
             <span className="underline italic">web consultancy firm</span>{" "}

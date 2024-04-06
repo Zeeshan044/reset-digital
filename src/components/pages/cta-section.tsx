@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 const CTASection = () => {
   return (
-    <div className="max-w-7xl mx-auto py-24 px-10">
+    <div className="max-w-7xl mx-auto py-24 p-section">
       <div className="bg-card md:pl-40 py-24 flex flex-col items-center md:items-start relative overflow-hidden z-20">
         <div className="flex flex-col items-center">
           <h5 className="text-xs font-light tracking-long">GET IN TOUCH</h5>

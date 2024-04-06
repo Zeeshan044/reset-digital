@@ -5,11 +5,12 @@ import chain from "@/assets/images/chain.png";
 import load from "@/assets/images/load.png";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Heading from "../ui/heading";
 
 const PartnerSection = () => {
   return (
     <div className="p-section flex flex-col gap-12 py-24">
-      <div className="flex justify-between gap-8 mb-8">
+      <div className="flex flex-wrap-reverse justify-between gap-8 mb-8">
         <div className="font-light max-w-lg">
           <h5 className="text-xs tracking-long">OUR CLIENTS</h5>
           <p className="text-base mt-4 dark:text-white ">
@@ -18,14 +19,7 @@ const PartnerSection = () => {
             Digital.
           </p>
         </div>
-        <div>
-          <h2 className="text-5xl md:text-6xl">
-            Trusted by{" "}
-            <i className="bg-primary text-primary-foreground whitespace-nowrap">
-              Great Brands
-            </i>
-          </h2>
-        </div>
+        <Heading title="Trusted by" span="Great Brands" />
       </div>
       <div className="grow">
         <Marquee autoFill>

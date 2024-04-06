@@ -6,6 +6,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from "../ui/heading";
 
 const Reviews = () => {
   const sliderRef = useRef<Slider>(null);
@@ -30,17 +31,11 @@ const Reviews = () => {
 
   return (
     <div className="p-section py-24">
-      <div className="grid grid-cols-7 gap-12 items-start">
-        <div className="col-span-2 flex flex-col justify-between h-full pb-8">
-          <div>
-            <h5 className="text-xs font-light tracking-long">TESTIMONIALS</h5>
-            <h2 className="text-6xl !leading-normal font-medium">
-              Client{" "}
-              <i className="bg-primary text-primary-foreground">Reviews</i>{" "}
-            </h2>
-          </div>
+      <div className="grid grid-cols-1 2xl:grid-cols-7 gap-12 items-start">
+        <div className="2xl:col-span-2 flex flex-col justify-between h-full pb-8">
+          <Heading subtitle="testimonials" title="Client" span="Reviews" />
 
-          <div className="flex gap-6 ">
+          <div className="gap-6 hidden md:flex mt-4">
             <button
               onClick={() => {
                 sliderRef.current?.slickPrev();
@@ -59,18 +54,29 @@ const Reviews = () => {
             </button>
           </div>
         </div>
-        <div className="grow col-span-5">
-          <Slider ref={sliderRef} slidesToShow={1} arrows={false}>
+        <div className="grow 2xl:col-span-5">
+          <Slider ref={sliderRef} slidesToShow={1} arrows={false} autoplay>
             {reviews.map((review, index) => (
               <div key={index} className="overflow-hidden">
-                <div className="grid grid-cols-4">
-                  <div className="col-span-3">
-                    <div className="px-16 bg-card flex justify-center items-center h-[300px]">
-                      <Image src={profile} alt="" />
-                      <p className="font-light  ">{review.review}</p>
+                <div className="grid lg:grid-cols-4">
+                  <div className="lg:col-span-3">
+                    <div className="px-8 md:px-16 bg-card flex justify-center items-center h-[300px]">
+                      <div className="flex flex-col md:flex-row gap-x-6">
+                        <Image
+                          src={profile}
+                          alt=""
+                          className="shrink-0 h-20 w-20"
+                        />
+                        <div>
+                          <p className="font-light">{review.review}</p>
+                          <h5 className="uppercase text-xs mb-2 tracking-long mt-4 text-primary">
+                            {review.name}
+                          </h5>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="font-light px-5 py-[30px]  flex flex-col justify-center items-center">
+                  <div className="hidden lg:flex font-light px-5 py-[30px] flex-col justify-center items-center">
                     <h5 className="uppercase text-xs    mb-2 tracking-long">
                       {review.name}
                     </h5>

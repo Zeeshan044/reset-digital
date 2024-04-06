@@ -1,4 +1,5 @@
 import Button from "@/components/ui/button";
+import Heading from "@/components/ui/heading";
 
 const SKILLS = [
   {
@@ -39,15 +40,8 @@ function WhatWeDoSection() {
       <div className="p-section py-24">
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-9">
           <div>
-            <div className="flex flex-col justify-center gap-y-4 mb-12">
-              <h5 className="text-xs font-light tracking-long uppercase">
-                what we do
-              </h5>
-              <h2 className="text-5xl font-medium">
-                Our <i className="bg-primary text-primary-foreground">Skills</i>{" "}
-              </h2>
-            </div>
-            <p className="">
+            <Heading subtitle="what we do" title="Our" span="Skills" />
+            <p className="mt-10">
               We are a team of professionals who are dedicated to providing the
               best services to our clients. We offer a wide range of services
               that are designed to help you achieve your goals. Whether you need

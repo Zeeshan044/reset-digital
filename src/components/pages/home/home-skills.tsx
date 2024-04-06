@@ -2,6 +2,7 @@ import React from "react";
 import Skill from "@/assets/images/skills.png";
 
 import Image from "next/image";
+import Heading from "@/components/ui/heading";
 
 const Skills = () => {
   return (
@@ -16,16 +17,10 @@ const Skills = () => {
             </p>
           </div>
           <div className="mt-10">
-            <h2 className="text-5xl md:text-6xl font-medium">
-              Visualize{" "}
-              <i className="bg-primary text-primary-foreground whitespace-nowrap">
-                {" "}
-                Our Skills
-              </i>
-            </h2>
+            <Heading title="Visualize" span="Our Skills" />
           </div>
         </div>
-        <div className="mt-6 grid md:grid-cols-2">
+        <div className="mt-6 grid md:grid-cols-2 gap-8">
           <div className="flex gap-12 justify-center">
             <div className="relative aspect-[9/25] rotate-12 hover:-translate-y-8 duration-200">
               <Image
@@ -52,7 +47,7 @@ const Skills = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col justify-around gap-20">
+          <div className="flex flex-col justify-around gap-12 xl:gap-20">
             <div className="mt-10 text-end">
               <h4 className="font-medium text-3xl border-b-2 pb-1 border-primary">
                 Innovative

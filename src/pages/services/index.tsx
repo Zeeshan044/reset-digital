@@ -51,7 +51,7 @@ const SECTIONS = [
 
 const Services = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* Hero Intro */}
       <section className="flex flex-col items-center justify-center py-20 p-section">
         <h1 className="text-7xl lg:text-9xl font-semibold text-center">
@@ -80,7 +80,7 @@ const Services = () => {
       </section>
 
       <CTASection />
-    </>
+    </div>
   );
 };
 

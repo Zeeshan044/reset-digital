@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import Image1 from "@/assets/images/design-3d.png";
 import Image2 from "@/assets/images/branding-3d.png";
 import Image3 from "@/assets/images/seo-3d.png";
+import Heading from "@/components/ui/heading";
 
 const ExpertiseData = [
   {
@@ -28,19 +29,13 @@ const ExpertiseData = [
 const HomeExpertise = () => {
   return (
     <div className="p-section py-20 min-h-screen flex items-center">
-      <div className="flex gap-8 items-start">
+      <div className="flex flex-wrap xl:flex-nowrap gap-8 items-start">
         <div className="flex flex-col gap-8">
-          <div>
-            <h5 className="text-xs mb-4 tracking-long uppercase ">
-              Imagine & Design
-            </h5>
-            <h2 className="text-5xl md:text-6xl mt-3">
-              We Create{" "}
-              <i className="bg-primary text-primary-foreground whitespace-nowrap">
-                Experiences
-              </i>
-            </h2>
-          </div>
+          <Heading
+            subtitle="Imagine & Design"
+            title="We Create"
+            span="Experience"
+          />
           <div className="font-light max-w-sm">
             <p className="text-base tracking-wide">
               From brand development to captivating user experiences, We
@@ -71,7 +66,7 @@ interface ExpertiseCardProps {
 
 function ExpertiseCard({ title, description, image }: ExpertiseCardProps) {
   return (
-    <div className="px-9 pt-8 pb-14 bg-card">
+    <div className="px-9 pt-8 pb-14 bg-card hover:-translate-y-8 duration-200">
       <div className="aspect-square relative mx-auto mb-4">
         <Image
           src={image}
