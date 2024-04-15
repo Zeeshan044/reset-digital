@@ -46,11 +46,11 @@ const Foundation = () => {
         <div className="flex justify-center lg:justify-end">
           <div className="flex flex-col w-min">
             <div className="flex justify-center">
-              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-white/10 rounded-full backdrop-blur-3xl border border-white/30 -mb-20 sm:-mb-40 relative z-30"></div>
+              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-primary opacity-30 rounded-full backdrop-blur-3xl border border-white/30 -mb-20 sm:-mb-40 relative z-30"></div>
             </div>
             <div className="flex">
-              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-white/10 rounded-full backdrop-blur-3xl border border-white/30 relative z-10"></div>
-              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-white/10 rounded-full backdrop-blur-3xl border border-white/30 -ml-20 sm:-ml-40 relative z-20"></div>
+              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-primary opacity-60 rounded-full backdrop-blur-3xl border border-white/30 relative z-10"></div>
+              <div className="h-48 w-48 sm:h-80 sm:w-80 xl:h-96 xl:w-96 bg-primary rounded-full backdrop-blur-3xl border border-white/30 -ml-20 sm:-ml-40 relative z-20"></div>
             </div>
           </div>
         </div>
