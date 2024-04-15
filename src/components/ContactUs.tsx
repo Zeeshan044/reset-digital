@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./ui/button";
 
 const ContactUs = () => {
+
   return (
     <div className="container-custom py-24">
       <div className="md:bg-card md:py-16 md:px-10 ">

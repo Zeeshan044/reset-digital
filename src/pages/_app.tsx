@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { ScrollerMotion } from "scroller-motion";
 
 export default function App({ Component, pageProps }: AppProps) {
+
+
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 

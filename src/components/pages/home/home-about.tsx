@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import animationData from "@/assets/lottie/hero-animation.json";
 import Button from "@/components/ui/button";
-
 import HeroLogo from "@/assets/images/hero-logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomeAbout = () => {
   return (
@@ -44,7 +44,10 @@ const HomeAbout = () => {
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Button className="uppercase mt-12">Get started now</Button>
+            <Link
+              href="/contact">
+              <Button className="uppercase mt-12">Get started now</Button>
+            </Link>
           </motion.span>
 
           <Image

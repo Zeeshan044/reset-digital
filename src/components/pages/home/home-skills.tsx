@@ -22,7 +22,7 @@ const Skills = () => {
         </div>
         <div className="mt-6 grid md:grid-cols-2 gap-8">
           <div className="flex gap-12 justify-center">
-            <div className="relative aspect-[9/25] rotate-12 hover:-translate-y-8 duration-200">
+            <div className="relative aspect-[9/25] rotate-12  hover:scale-110 cursor-pointer duration-200">
               <Image
                 src="https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
@@ -30,7 +30,7 @@ const Skills = () => {
                 fill
               />
             </div>
-            <div className="relative aspect-[9/25] rotate-12 hover:-translate-y-8 duration-200">
+            <div className="relative aspect-[9/25] rotate-12 hover:scale-110 cursor-pointer duration-200">
               <Image
                 src="https://images.unsplash.com/photo-1506792006437-256b665541e2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
@@ -38,7 +38,7 @@ const Skills = () => {
                 fill
               />
             </div>
-            <div className="relative aspect-[9/25] rotate-12 hover:-translate-y-8 duration-200">
+            <div className="relative aspect-[9/25] rotate-12 hover:scale-110 cursor-pointer duration-200">
               <Image
                 src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""

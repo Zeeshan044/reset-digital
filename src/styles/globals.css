@@ -10,33 +10,30 @@
 @tailwind utilities;
 
 @layer base {
-
   @font-face {
     font-family: "Archia";
-    src: url('./../assets/fonts/Archia-Regular.otf') format('opentype');
+    src: url("./../assets/fonts/Archia-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
   }
 
-
   :root {
-    --color-primary: #82E8F2;
+    --color-primary: #82e8f2;
     --color-primary-foreground: #111111;
-    --color-background: #FFFFFF;
+    --color-background: #ffffff;
     --color-on-background: #111111;
     --color-body: #111111;
-    --color-card: #FFFFFF;
-  }
-  
-  .dark {
-    --color-primary: #82E8F2;
-    --color-primary-foreground: #111111;
-    --color-background: #1D2025;
-    --color-on-background: #f1f1f1;
-    --color-body: #f1f1f1;
-    --color-card: #292D32;
+    --color-card: #ffffff;
   }
 
+  .dark {
+    --color-primary: #82e8f2;
+    --color-primary-foreground: #111111;
+    --color-background: #1d2025;
+    --color-on-background: #f1f1f1;
+    --color-body: #f1f1f1;
+    --color-card: #292d32;
+  }
 
   /* Target the entire scrollbar (for WebKit browsers) */
   ::-webkit-scrollbar {
@@ -55,7 +52,7 @@
 
   body {
     font-family: "Archivo", sans-serif;
-    color: theme('colors.body.DEFAULT');
+    color: theme("colors.body.DEFAULT");
   }
 
   .container-custom {
@@ -70,6 +67,9 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 2rem;
+  }
+  html {
+    scroll-behavior: smooth;
   }
 
   .p-section {

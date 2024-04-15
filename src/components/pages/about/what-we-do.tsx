@@ -1,5 +1,7 @@
 import Button from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
+import { motion } from "framer-motion";
+
 
 const SKILLS = [
   {
@@ -77,9 +79,12 @@ type Props = {
 };
 function SkillCard({ title, description }: Props) {
   return (
-    <div className="bg-card p-4 shadow-md h-full">
-      <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
-      <p className="">{description}</p>
+    <div className="relative">
+      <div className="z-20 top-0 left-0 right-0 bottom-0 bg-white/10 rounded-md cursor-pointer border border-white/60 p-4 shadow-md h-full hover:scale-105 duration-200">
+        <div className="relative bg-primary w-40 h-40 rounded-full m-auto mt-20 blur z-10 inset-0"></div>
+        <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
+        <p className="">{description}</p>
+      </div>
     </div>
   );
 }

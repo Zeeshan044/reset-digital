@@ -5,6 +5,8 @@ import Image1 from "@/assets/images/design-3d.png";
 import Image2 from "@/assets/images/branding-3d.png";
 import Image3 from "@/assets/images/seo-3d.png";
 import Heading from "@/components/ui/heading";
+import { motion } from "framer-motion";
+
 
 const ExpertiseData = [
   {
@@ -66,7 +68,9 @@ interface ExpertiseCardProps {
 
 function ExpertiseCard({ title, description, image }: ExpertiseCardProps) {
   return (
-    <div className="px-9 pt-8 pb-14 bg-card hover:-translate-y-8 duration-200">
+    <div
+      className="px-9 pt-8 pb-14 bg-card hover:scale-110 duration-200 cursor-pointer"
+    >
       <div className="aspect-square relative mx-auto mb-4">
         <Image
           src={image}
