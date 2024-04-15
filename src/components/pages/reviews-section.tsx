@@ -7,6 +7,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heading from "../ui/heading";
+import fadeInMotion from "../hoc/fade-in-motion";
 
 const Reviews = () => {
   const sliderRef = useRef<Slider>(null);
@@ -94,4 +95,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default fadeInMotion(Reviews);

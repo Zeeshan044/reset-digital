@@ -3,6 +3,7 @@ import Skill from "@/assets/images/skills.png";
 
 import Image from "next/image";
 import Heading from "@/components/ui/heading";
+import fadeInMotion from "@/components/hoc/fade-in-motion";
 
 const Skills = () => {
   return (
@@ -73,4 +74,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default fadeInMotion(Skills);

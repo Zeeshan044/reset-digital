@@ -1,6 +1,7 @@
 import React from "react";
 import AboutImg from "@/assets/images/about.png";
 import Image from "next/image";
+import fadeInMotion from "@/components/hoc/fade-in-motion";
 const AboutHero = () => {
   return (
     <div className="p-section">
@@ -20,4 +21,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default fadeInMotion(AboutHero);
