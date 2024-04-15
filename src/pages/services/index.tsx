@@ -1,59 +1,87 @@
-import Navbar from "@/components/Navbar";
-import Reviews from "@/components/Reviews";
-import Footer from "@/components/Footer";
-import ServiceAbout from "@/components/ServiceAbout";
-import WebService from "@/components/WebService";
-import LogoService from "@/components/LogoService";
-import SeoService from "@/components/SeoService";
-import ChooseServices from "@/components/ChooseServices";
-import GetInTouchABout from "@/components/GetInTouchABout";
-import { ScrollerMotion } from "scroller-motion";
-import FadeInMotion from "@/components/FadeInMotion";
+import CTASection from "@/components/pages/cta-section";
+import ServiceSectionSlide from "@/components/pages/services/service-slide";
+
+const SECTIONS = [
+  {
+    title: "Web Design",
+    description:
+      "We create websites that aren’t just beautiful but also embody the essence of your brand. Powered by Webflow; elevated by our generative and 3D solutions: we will make your vision an awe-inspiring reality.",
+    number: "01",
+    image:
+      "https://cdn.pixabay.com/photo/2023/08/19/13/42/water-8200502_1280.jpg",
+    reversed: false,
+  },
+  {
+    title: "Brand Identity",
+    description:
+      "We create websites that aren’t just beautiful but also embody the essence of your brand. Powered by Webflow; elevated by our generative and 3D solutions: we will make your vision an awe-inspiring reality.",
+    number: "02",
+    image:
+      "https://cdn.pixabay.com/photo/2023/08/19/13/42/water-8200502_1280.jpg",
+    reversed: true,
+  },
+  {
+    title: "Development",
+    description:
+      "We create websites that aren’t just beautiful but also embody the essence of your brand. Powered by Webflow; elevated by our generative and 3D solutions: we will make your vision an awe-inspiring reality.",
+    number: "03",
+    image:
+      "https://cdn.pixabay.com/photo/2023/08/19/13/42/water-8200502_1280.jpg",
+    reversed: false,
+  },
+  {
+    title: "SEO",
+    description:
+      "We create websites that aren’t just beautiful but also embody the essence of your brand. Powered by Webflow; elevated by our generative and 3D solutions: we will make your vision an awe-inspiring reality.",
+    number: "04",
+    image:
+      "https://cdn.pixabay.com/photo/2023/08/19/13/42/water-8200502_1280.jpg",
+    reversed: true,
+  },
+  {
+    title: "Manage and Grow",
+    description:
+      "We create websites that aren’t just beautiful but also embody the essence of your brand. Powered by Webflow; elevated by our generative and 3D solutions: we will make your vision an awe-inspiring reality.",
+    number: "05",
+    image:
+      "https://cdn.pixabay.com/photo/2023/08/19/13/42/water-8200502_1280.jpg",
+    reversed: false,
+  },
+];
 
 const Services = () => {
-    return (
-        <main className="min-h-screen bg-white dark:bg-secondary-dark">
-            <div className="custom-container">
-                <Navbar />
-                {/* About */}
-                <FadeInMotion>
-                    <ServiceAbout />
-                </FadeInMotion>
-                {/* Web Services */}
-                <FadeInMotion>
-                    <WebService />
-                </FadeInMotion>
-                {/* Logo Services */}
-                <FadeInMotion>
-                    <LogoService />
-                </FadeInMotion>
-                {/* SEO Services */}
-                <FadeInMotion>
-                    <SeoService />
-                </FadeInMotion>
-                {/* Choose Services */}
-                <FadeInMotion>
-                    <ChooseServices />
-                </FadeInMotion>
-                {/* Reviews */}
-                <FadeInMotion>
-                    <Reviews />
-                </FadeInMotion>
-                {/* Get In Touch */}
-                <FadeInMotion>
-                    <GetInTouchABout />
-                </FadeInMotion>
+  return (
+    <div className="overflow-x-hidden">
+      {/* Hero Intro */}
+      <section className="flex flex-col items-center justify-center py-20 p-section">
+        <h1 className="text-7xl lg:text-9xl font-semibold text-center">
+          Our <i className="font-thin text-primary">Services</i>
+        </h1>
+        <p className="max-w-5xl text-center mt-8 lg:mt-16 lg:text-xl font-light">
+          Embark on a creative odyssey with Reset Digital. We create websites
+          that aren’t just beautiful but also embody the essence of your brand.
+          Powered by Webflow; elevated by our generative and 3D solutions: we
+          will make your vision an awe-inspiring reality.
+        </p>
+      </section>
 
-                <Footer />
-            </div>
-        </main>
-    );
+      {/* Services Section */}
+      <section className="flex flex-col gap-y-32 lg:gap-y-40 my-20 p-section">
+        {SECTIONS.map((section, index) => (
+          <ServiceSectionSlide
+            key={section.number}
+            title={section.title}
+            description={section.description}
+            number={section.number}
+            image={section.image}
+            reversed={section.reversed}
+          />
+        ))}
+      </section>
+
+      <CTASection />
+    </div>
+  );
 };
 
-const ServicesPage = () => (
-    <ScrollerMotion>
-        <Services />
-    </ScrollerMotion>
-);
-
-export default ServicesPage;
+export default Services;

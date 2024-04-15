@@ -1,20 +1,20 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import AppNav from "@/components/layout/app-nav";
+import Footer from "@/components/layout/app-footer";
 import GetInTouchABout from "@/components/GetInTouchABout";
 import Projects from "@/components/Projects";
 
 const About = () => {
-    return (
-        <main className="min-h-screen bg-white dark:bg-secondary-dark">
-            <div className="custom-container">
-                <Navbar />
-                <Projects />
-                <GetInTouchABout />
-                <Footer />
-            </div>
-        </main>
-    );
+  return (
+    <main className="min-h-screen bg-background dark:bg-background">
+      <div className="container-custom">
+        <AppNav />
+        <Projects />
+        <GetInTouchABout />
+        <Footer />
+      </div>
+    </main>
+  );
 };
 
 export default About;

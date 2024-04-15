@@ -11,22 +11,28 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          dark: "#82E8F2",
-          btn: "#786DFF4D",
-          grey: "#D0D0D0",
-          faq: "#111A21",
+          DEFAULT: "var(--color-primary)",
+          foreground: "var(--color-primary-foreground)",
         },
-        secondary: {
-          dark: "#1D2025",
-          light: "#F5F5F5",
-          cold: "#111111",
-          box: "#292D32",
+        background: "var(--color-background)",
+        body: {
+          DEFAULT: "var(--color-body)",
         },
+        card: "var(--color-card)",
+      },
+      fontFamily: {
+        "open-sans": ["Open Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        archia: ["Archia", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "gradient-system-dark":
           "linear-gradient(3.95deg, #82E8F2 -19.7%, #1D2025 96.77%)",
         "gradient-system-light": "#ffffff",
+      },
+      letterSpacing: {
+        long: "8px",
       },
     },
   },

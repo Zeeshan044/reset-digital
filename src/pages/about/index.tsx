@@ -1,64 +1,27 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import AboutHero from "@/components/AboutHero";
-import Trusted from "@/components/Trusted";
-import DiscoveryStory from "@/components/DiscoverStory";
-import Skills from "@/components/Skills";
-import Reviews from "@/components/Reviews";
-import Footer from "@/components/Footer";
+import AboutHero from "@/components/pages/about/about-hero";
+import PartnerSection from "@/components/pages/partner-section";
+import DiscoveryStory from "@/components/pages/about/discover-story";
+import Reviews from "@/components/pages/reviews-section";
 import AboutValues from "@/components/AboutValues";
-// import StartProject from "@/components/StartProject";
-import GetInTouchABout from "@/components/GetInTouchABout";
-// import OurTeam from "@/components/OurTeam";
-import FadeInMotion from "@/components/FadeInMotion";
-import { ScrollerMotion } from "scroller-motion";
+import CTASection from "@/components/pages/cta-section";
+import WhatWeDoSection from "@/components/pages/about/what-we-do";
 const About = () => {
   return (
-    <ScrollerMotion>
-      <main className="min-h-screen bg-white dark:bg-secondary-dark">
-        <div className="custom-container">
-          <Navbar />
-          {/* Hero */}
-          <FadeInMotion>
-            <AboutHero />
-          </FadeInMotion>
-
-          {/* Partners */}
-          <FadeInMotion>
-            <Trusted />
-          </FadeInMotion>
-
-          {/* Story */}
-          <FadeInMotion>
-            <DiscoveryStory />
-          </FadeInMotion>
-
-          {/* Values */}
-          <FadeInMotion>
-            <AboutValues />
-          </FadeInMotion>
-
-          {/* Skills */}
-          <FadeInMotion>
-            <Skills />
-          </FadeInMotion>
-
-          {/* Reviews */}
-          <FadeInMotion>
-            <Reviews />
-          </FadeInMotion>
-
-          {/* Get In Touch */}
-          <FadeInMotion>
-            <GetInTouchABout />
-          </FadeInMotion>
-
-          {/* <OurTeam /> */}
-          <Footer />
-        </div>
-      </main>
-    </ScrollerMotion>
+    <>
+      <AboutHero />
+      <div className="mt-24" />
+      <PartnerSection />
+      {/* <AboutValues /> */}
+      <WhatWeDoSection />
+      <DiscoveryStory />
+      <Reviews />
+      <CTASection />
+    </>
   );
+  {
+    /* <GetInTouchABout /> */
+  }
 };
 
 export default About;
