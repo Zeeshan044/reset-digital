@@ -3,6 +3,7 @@ import Project1 from "@/assets/images/project.png";
 import Project2 from "@/assets/images/project2.png";
 import Image from "next/image";
 import Link from "next/link";
+import fadeInMotion from "../hoc/fade-in-motion";
 const CTASection = () => {
   return (
     <div className="max-w-7xl mx-auto py-24 p-section">
@@ -39,4 +40,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default fadeInMotion(CTASection);

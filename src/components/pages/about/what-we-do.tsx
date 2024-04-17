@@ -1,3 +1,4 @@
+import fadeInMotion from "@/components/hoc/fade-in-motion";
 import Button from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
 
@@ -50,9 +51,10 @@ function WhatWeDoSection() {
             </p>
             <Button className="mt-6">View our work</Button>
           </div>
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 relative">
+            <div className="absolute h-96 w-96 right-1/2 top-8 translate-x-3/4 rounded-full bg-blue-700/60 blur-[100px]"></div>
             {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 relative z-10">
               {SKILLS.map((skill, index) => (
                 <div key={index}>
                   <SkillCard
@@ -69,7 +71,7 @@ function WhatWeDoSection() {
   );
 }
 
-export default WhatWeDoSection;
+export default fadeInMotion(WhatWeDoSection);
 
 type Props = {
   title: string;
@@ -77,13 +79,9 @@ type Props = {
 };
 function SkillCard({ title, description }: Props) {
   return (
-    <div className="relative h-72">
-      <div className="z-10 bg-primary w-28 h-28 rounded-full blur inset-16 opacity-70  absolute"> .</div>
-      <div className="absolute z-20 top-0 left-0 right-0 bottom-0 bg-white/10 rounded-md cursor-pointer border border-white/60 p-4 shadow-md hover:scale-105 duration-200">
-        <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
-        <p className="">{description}</p>
-      </div>
+    <div className="bg-white/10 backdrop-blur-lg rounded-md cursor-pointer border border-white/60 p-4 shadow-md hover:scale-105 duration-200 h-full">
+      <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
+      <p className="">{description}</p>
     </div>
-
   );
 }

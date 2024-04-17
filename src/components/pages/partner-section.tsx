@@ -6,6 +6,7 @@ import load from "@/assets/images/load.png";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Heading from "../ui/heading";
+import fadeInMotion from "../hoc/fade-in-motion";
 
 const PartnerSection = () => {
   return (
@@ -45,4 +46,4 @@ const PartnerSection = () => {
   );
 };
 
-export default PartnerSection;
+export default fadeInMotion(PartnerSection);

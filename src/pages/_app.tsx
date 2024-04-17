@@ -2,12 +2,11 @@ import Footer from "@/components/layout/app-footer";
 import AppNav from "@/components/layout/app-nav";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { ScrollerMotion } from "scroller-motion";
 
 export default function App({ Component, pageProps }: AppProps) {
-
-
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -25,7 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  if (isLoading) return null;
+  if (isLoading) {
+    return <div className="bg-background fixed inset-0"></div>;
+  }
   return (
     <ScrollerMotion disabled={isMobile}>
       <main className="min-h-screen bg-background">

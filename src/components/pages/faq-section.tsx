@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Button from "../ui/button";
+import fadeInMotion from "../hoc/fade-in-motion";
 
 const Faqs = () => {
   const faqs = [
@@ -139,4 +140,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default fadeInMotion(Faqs);

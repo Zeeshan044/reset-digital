@@ -2,6 +2,7 @@ import React from "react";
 import discoverImg from "@/assets/images/discover.png";
 import Image from "next/image";
 import Heading from "../../ui/heading";
+import fadeInMotion from "@/components/hoc/fade-in-motion";
 const DiscoveryStore = () => {
   return (
     <div className="p-section py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -49,4 +50,4 @@ const DiscoveryStore = () => {
   );
 };
 
-export default DiscoveryStore;
+export default fadeInMotion(DiscoveryStore);
