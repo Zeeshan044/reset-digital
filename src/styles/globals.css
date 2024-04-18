@@ -55,6 +55,19 @@
     color: theme("colors.body.DEFAULT");
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .container-custom-xxl {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 2rem; */
+  }
+
   .container-custom {
     max-width: 1440px;
     margin-left: auto;
@@ -68,10 +81,14 @@
     margin-right: auto;
     padding: 0 2rem;
   }
-  html {
-    scroll-behavior: smooth;
-  }
 
+  .line-clamp-6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+  
   .p-section {
     @apply px-8 lg:px-16 2xl:px-20;
   }

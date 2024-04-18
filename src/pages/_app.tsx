@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/app-footer";
 import AppNav from "@/components/layout/app-nav";
+import Layout from "@/components/layout/layout";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";

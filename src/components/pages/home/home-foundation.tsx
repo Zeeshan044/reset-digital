@@ -11,12 +11,12 @@ const FOUNDATIONS = [
   },
   {
     title: "INNOVATE",
-    description: "Product with a character and solution optimized",
+    description: "Products with character that display your brand",
     colorClass: "text-primary opacity-70",
   },
   {
     title: "ELEVATE",
-    description: "Complexity simplified and user experience enhanced",
+    description: "Complexity surfaced only when necessary",
     colorClass: "text-primary",
   },
 ];
