@@ -1,39 +1,7 @@
 import fadeInMotion from "@/components/hoc/fade-in-motion";
 import Button from "@/components/ui/button";
 import Heading from "@/components/ui/heading";
-
-const SKILLS = [
-  {
-    title: "Web Design",
-    description:
-      "We offer professional web design services that are tailored to meet the needs of your business. Our team of experts will work with you to create a website that is visually appealing, user-friendly, and optimized for search engines.",
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Our digital marketing services are designed to help you reach your target audience and drive traffic to your website. We offer a range of services, including search engine optimization, pay-per-click advertising, and social media marketing.",
-  },
-  {
-    title: "Social Media Management",
-    description:
-      "Our social media management services are designed to help you build and maintain a strong online presence. We will work with you to create a social media strategy that is tailored to meet the needs of your business.",
-  },
-  {
-    title: "Web Design",
-    description:
-      "We offer professional web design services that are tailored to meet the needs of your business. Our team of experts will work with you to create a website that is visually appealing, user-friendly, and optimized for search engines.",
-  },
-  {
-    title: "Digital Marketing",
-    description:
-      "Our digital marketing services are designed to help you reach your target audience and drive traffic to your website. We offer a range of services, including search engine optimization, pay-per-click advertising, and social media marketing.",
-  },
-  {
-    title: "Social Media Management",
-    description:
-      "Our social media management services are designed to help you build and maintain a strong online presence. We will work with you to create a social media strategy that is tailored to meet the needs of your business.",
-  },
-];
+import SKILLS from "@/data/skills";
 
 function WhatWeDoSection() {
   return (
@@ -52,7 +20,7 @@ function WhatWeDoSection() {
             <Button className="mt-6">View our work</Button>
           </div>
           <div className="md:col-span-2 relative">
-            <div className="absolute h-96 w-96 right-1/2 top-8 translate-x-3/4 rounded-full bg-blue-700/60 blur-[100px]"></div>
+            {/* <div className="absolute h-96 w-96 right-1/2 top-8 translate-x-3/4 rounded-full bg-blue-700/60 blur-[100px]"></div> */}
             {/* Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 relative z-10">
               {SKILLS.map((skill, index) => (
@@ -79,9 +47,9 @@ type Props = {
 };
 function SkillCard({ title, description }: Props) {
   return (
-    <div className="bg-white/10 backdrop-blur-lg rounded-md cursor-pointer border border-white/60 p-4 shadow-md hover:scale-105 duration-200 h-full">
+    <div className="bg-white/10 backdrop-blur-lg cursor-pointer border border-white/60 p-4 shadow-md hover:scale-105 duration-200 h-full">
       <h3 className="text-xl font-bold mb-4 text-primary">{title}</h3>
-      <p className="">{description}</p>
+      <p className="line-clamp-6">{description}</p>
     </div>
   );
 }

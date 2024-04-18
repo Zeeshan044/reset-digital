@@ -44,8 +44,7 @@ const HomeAbout = () => {
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link
-              href="/contact">
+            <Link href="/contact">
               <Button className="uppercase mt-12">Get started now</Button>
             </Link>
           </motion.span>
@@ -56,9 +55,12 @@ const HomeAbout = () => {
             className="absolute top-0 right-0 opacity-25 -z-10 max-w-96 w-full lg:hidden"
           />
         </div>
-        <div className="items-start hidden lg:flex overflow-hidden">
-          <div className="flex items-center gap-12 w-full">
-            <Lottie animationData={animationData} />
+        <div className="hidden lg:flex overflow-hidden self-stretch">
+          <div className="flex items-center justify-center gap-12 w-full">
+            <Lottie
+              animationData={animationData}
+              className="h-full aspect-square"
+            />
           </div>
         </div>
       </div>
