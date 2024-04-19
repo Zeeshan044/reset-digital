@@ -35,7 +35,7 @@ const HomeExpertise = () => {
           <Heading
             subtitle="Imagine & Design"
             title="We Create"
-            span="Experience"
+            span="Experiences"
           />
           <div className="font-light max-w-sm">
             <p className="text-base tracking-wide">

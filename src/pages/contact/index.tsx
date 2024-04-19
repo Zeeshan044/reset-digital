@@ -41,7 +41,7 @@ const ContactUs = () => {
                 <Input label="Email" placeholder="Your Email" name="email" />
                 <Input
                   label="Phone Number"
-                  placeholder="+ 1009 12345"
+                  placeholder="Your Phone Number"
                   name="phone"
                 />
                 <Input label="URL" placeholder="Your Website URL" name="url" />
