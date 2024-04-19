@@ -16,10 +16,15 @@ const AppNav = () => {
   const router = useRouter();
   return (
     <>
-      <div className="p-section">
+      <div className="p-section container-custom-xxl">
         <nav className="flex justify-between items-center h-[92px] dark:text-white">
           <div>
-            <h2 className="text-2xl font-semibold">RESET DIGITAL</h2>
+            <Link
+              href={"/"}
+              className="text-2xl font-semibold hover:text-primary duration-150"
+            >
+              RESET DIGITAL
+            </Link>
           </div>
           <div className="hidden lg:flex text-sm font-light gap-8">
             {LINKS.map((link) => (

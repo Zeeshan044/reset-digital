@@ -7,7 +7,6 @@ import Image3 from "@/assets/images/seo-3d.png";
 import Heading from "@/components/ui/heading";
 import { motion } from "framer-motion";
 
-
 const ExpertiseData = [
   {
     title: "DESIGN",
@@ -30,13 +29,13 @@ const ExpertiseData = [
 
 const HomeExpertise = () => {
   return (
-    <div className="p-section py-20 min-h-screen flex items-center">
+    <div className="p-section py-20 h-screen max-h-[1000px] flex items-center">
       <div className="flex flex-wrap xl:flex-nowrap gap-8 items-start">
         <div className="flex flex-col gap-8">
           <Heading
             subtitle="Imagine & Design"
             title="We Create"
-            span="Experience"
+            span="Experiences"
           />
           <div className="font-light max-w-sm">
             <p className="text-base tracking-wide">
@@ -68,9 +67,7 @@ interface ExpertiseCardProps {
 
 function ExpertiseCard({ title, description, image }: ExpertiseCardProps) {
   return (
-    <div
-      className="px-9 pt-8 pb-14 bg-card hover:scale-110 duration-200 cursor-pointer"
-    >
+    <div className="px-9 pt-8 pb-14 bg-card hover:scale-110 duration-200 cursor-pointer">
       <div className="aspect-square relative mx-auto mb-4">
         <Image
           src={image}

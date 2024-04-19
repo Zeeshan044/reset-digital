@@ -5,18 +5,18 @@ import Heading from "@/components/ui/heading";
 
 const FOUNDATIONS = [
   {
-    title: "IDEA",
+    title: "IDEATE",
     description: "Design that serves a purpose",
     colorClass: "text-primary opacity-30",
   },
   {
     title: "INNOVATE",
-    description: "Product with a character and solution optimized",
+    description: "Products with character that display your brand",
     colorClass: "text-primary opacity-70",
   },
   {
     title: "ELEVATE",
-    description: "Complexity simplified and user experience enhanced",
+    description: "Complexity surfaced only when necessary",
     colorClass: "text-primary",
   },
 ];

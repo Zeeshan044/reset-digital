@@ -8,70 +8,8 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Button from "../ui/button";
 import fadeInMotion from "../hoc/fade-in-motion";
 
+import faqs from "@/data/faqs";
 const Faqs = () => {
-  const faqs = [
-    {
-      question: "Why work with Reset Digital?",
-      answer:
-        "We offer innovative solutions tailored to your needs, ensuring a unique and effective digital presence.",
-    },
-    {
-      question: "Where is your team based?",
-      answer:
-        "Our team is based in Lahore, but we work with clients worldwide.",
-    },
-    {
-      question: "What is your web design process like?",
-      answer:
-        "Our web design process is collaborative and iterative, ensuring your vision is realized effectively.",
-    },
-    {
-      question: "What will my project cost?",
-      answer:
-        "Costs vary depending on the scope and complexity of your project. Contact us for a detailed quote.",
-    },
-    {
-      question: "Do you offer website maintenance?",
-      answer:
-        "Yes, we offer website maintenance services to keep your site running smoothly.",
-    },
-    {
-      question: "How can I get an estimate for my project?",
-      answer:
-        "You can request a project estimate by contacting us with your project details.",
-    },
-    {
-      question: "What industries or types of clients do you work with?",
-      answer:
-        "We work with clients from various industries, providing tailored solutions to meet their specific needs.",
-    },
-    {
-      question: "Can you fix my existing website?",
-      answer:
-        "Yes, we can assess your existing website and provide solutions to improve its functionality and design.",
-    },
-    {
-      question: "Who will be working on my project?",
-      answer:
-        "Our experienced team of designers and developers will collaborate on your project to deliver high-quality results.",
-    },
-    {
-      question: "Do you offer search engine optimization services?",
-      answer:
-        "Yes, we offer SEO services to improve your website's visibility and ranking on search engines.",
-    },
-    {
-      question: "Do you use templates in your web design and development?",
-      answer:
-        "We prefer to create custom designs to ensure your website is unique and tailored to your brand.",
-    },
-    {
-      question: "Do you offer any digital marketing agency services?",
-      answer:
-        "Yes, we offer a range of digital marketing services to help promote your brand and reach your target audience.",
-    },
-  ];
-
   const [openIndex, setOpenIndex] = useState(-1);
 
   const toggleAccordion = (index: number) => {
@@ -79,9 +17,9 @@ const Faqs = () => {
   };
 
   return (
-    <div className="p-section min-h-screen flex items-center font-montserrat">
-      <div className="flex gap-8 flex-wrap grow">
-        <div className="lg:max-w-md">
+    <div className="p-section py-24 flex items-center font-montserrat">
+      <div className="flex gap-8 flex-wrap lg:flex-nowrap grow">
+        <div className="lg:max-w-md lg:shrink-0">
           <div className="flex gap-[18px] mb-[26px] items-center">
             <hr className="bg-black dark:bg-white w-6 h-1" />
             <span className="font-normal text-xl dark:text-primary text-[#1E1E1E]">
@@ -97,7 +35,6 @@ const Faqs = () => {
               to maintain clarity in everything we do. If you’re not ready to
               contact us but have a question, you may find answers here.
             </p>
-            <Button variation="secondary">More FAQs</Button>
           </div>
         </div>
         <div className="flex flex-col gap-4 grow">
@@ -122,13 +59,13 @@ const Faqs = () => {
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
-                    className="font-normal"
+                    className="font-normal text-justify"
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                   >
-                    {faq.answer}
+                    <div className="pl-4 pt-2">{faq.answer}</div>
                   </motion.div>
                 )}
               </AnimatePresence>

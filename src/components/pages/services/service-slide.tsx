@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -40,9 +41,11 @@ export default function ServiceSectionSlide({
           initial={{ opacity: 0, x: reversed ? -50 : 50, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative z-20 mx-6"
+          className="relative z-20 mx-6 w-full"
         >
-          <img src={image} alt="" />
+          <div className="aspect-video overflow-hidden">
+            <img src={image} alt="" className="object-cover h-full w-full" />
+          </div>
           <motion.div
             initial={{ opacity: 0, x: reversed ? -50 : 50 }}
             whileInView={{ opacity: 1, x: reversed ? -24 : 24 }}
