@@ -7,12 +7,10 @@ const Links = [
   {
     title: "Services",
     links: [
-      { title: "Home", link: "" },
-      { title: "About", link: "" },
-      { title: "Projects", link: "" },
-      { title: "Single Projects", link: "" },
-      { title: "Team", link: "" },
-      { title: "Contact", link: "" },
+      { title: "Home", link: "/" },
+      { title: "About", link: "/about" },
+      { title: "Services", link: "/services" },
+      { title: "Contact", link: "/contact" },
     ],
   },
   {
@@ -48,8 +46,10 @@ const Footer = () => {
             RESET DIGITAL
           </p>
           <p className="text-xs font-light mb-3">
-            Where Creativity Meets Innovation. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Porro, ullam?
+            A leading web consultancy firm specializing in exquisite website
+            designs and impactful branding solutions since 2023, we are an
+            innovative team committed to transforming your ideas into reality,
+            seamlessly blending creativity with purpose.
           </p>
         </div>
         {Links.map((link, index) => (

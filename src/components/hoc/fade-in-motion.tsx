@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { getDisplayName } from "next/dist/shared/lib/utils";
 
 function fadeInMotion(WrappedComponent: React.ComponentType<any>) {
   const ComponentWithAnimation: React.FC<any> = (props) => (
@@ -18,10 +18,6 @@ function fadeInMotion(WrappedComponent: React.ComponentType<any>) {
   )})`;
 
   return ComponentWithAnimation;
-}
-
-function getDisplayName(WrappedComponent: React.ComponentType<any>) {
-  return WrappedComponent.displayName || WrappedComponent.name || "Component";
 }
 
 export default fadeInMotion;

@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
-import Image from "next/image";
-import profile from "@/assets/images/profile.png";
+import { useRef, useState } from "react";
 import Slider from "react-slick";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
@@ -30,25 +28,6 @@ const Reviews = () => {
       <div className="grid grid-cols-1 2xl:grid-cols-7 gap-12 items-start">
         <div className="2xl:col-span-2 flex flex-col justify-between h-full pb-8">
           <Heading subtitle="testimonials" title="Client" span="Reviews" />
-
-          <div className="gap-6 hidden md:flex mt-4">
-            <button
-              onClick={() => {
-                sliderRef.current?.slickPrev();
-              }}
-              className="bg-primary text-primary-foreground p-3 rounded-full"
-            >
-              <FaChevronLeft className="h-8 w-8" />
-            </button>
-            <button
-              onClick={() => {
-                sliderRef.current?.slickNext();
-              }}
-              className="bg-primary text-primary-foreground p-3 rounded-full"
-            >
-              <FaChevronRight className="h-8 w-8" />
-            </button>
-          </div>
         </div>
         <div className="grow 2xl:col-span-5">
           <Slider {...settings} ref={sliderRef}>
@@ -86,6 +65,26 @@ const Reviews = () => {
               </div>
             ))}
           </Slider>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <div className="gap-6 hidden md:flex mt-4">
+          <button
+            onClick={() => {
+              sliderRef.current?.slickPrev();
+            }}
+            className="bg-primary text-primary-foreground p-3 rounded-full"
+          >
+            <FaChevronLeft className="h-8 w-8" />
+          </button>
+          <button
+            onClick={() => {
+              sliderRef.current?.slickNext();
+            }}
+            className="bg-primary text-primary-foreground p-3 rounded-full"
+          >
+            <FaChevronRight className="h-8 w-8" />
+          </button>
         </div>
       </div>
     </div>

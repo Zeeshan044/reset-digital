@@ -17,7 +17,7 @@ const Faqs = () => {
   };
 
   return (
-    <div className="p-section min-h-screen flex items-center font-montserrat py-24">
+    <div className="p-section py-24 flex items-center font-montserrat">
       <div className="flex gap-8 flex-wrap lg:flex-nowrap grow">
         <div className="lg:max-w-md lg:shrink-0">
           <div className="flex gap-[18px] mb-[26px] items-center">
@@ -35,7 +35,6 @@ const Faqs = () => {
               to maintain clarity in everything we do. If you’re not ready to
               contact us but have a question, you may find answers here.
             </p>
-            <Button variation="secondary">More FAQs</Button>
           </div>
         </div>
         <div className="flex flex-col gap-4 grow">
@@ -60,13 +59,13 @@ const Faqs = () => {
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
-                    className="font-normal"
+                    className="font-normal text-justify"
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                   >
-                    {faq.answer}
+                    <div className="pl-4 pt-2">{faq.answer}</div>
                   </motion.div>
                 )}
               </AnimatePresence>

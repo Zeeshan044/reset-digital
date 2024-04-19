@@ -41,7 +41,7 @@ export default function ServiceSectionSlide({
           initial={{ opacity: 0, x: reversed ? -50 : 50, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative z-20 mx-6"
+          className="relative z-20 mx-6 w-full"
         >
           <div className="aspect-video overflow-hidden">
             <img src={image} alt="" className="object-cover h-full w-full" />

@@ -5,7 +5,7 @@ import Heading from "@/components/ui/heading";
 
 const FOUNDATIONS = [
   {
-    title: "IDEA",
+    title: "IDEATE",
     description: "Design that serves a purpose",
     colorClass: "text-primary opacity-30",
   },

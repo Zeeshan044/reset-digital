@@ -17,7 +17,6 @@ function WhatWeDoSection() {
               help with web design, digital marketing, or social media
               management, we have the expertise to help you succeed.
             </p>
-            <Button className="mt-6">View our work</Button>
           </div>
           <div className="md:col-span-2 relative">
             {/* <div className="absolute h-96 w-96 right-1/2 top-8 translate-x-3/4 rounded-full bg-blue-700/60 blur-[100px]"></div> */}

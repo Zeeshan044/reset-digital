@@ -3,6 +3,8 @@ import BrandImg from "@/assets/images/brand-identity-Service-page.png";
 import DevelopmentImg from "@/assets/images/development-service-page.jpg";
 import SeoImg from "@/assets/images/seo-service-page.jpg";
 import GrowImg from "@/assets/images/manage-and-grow-service page.jpg";
+import AdSense from "@/assets/images/adsense-optimization.jpg";
+import Tailored from "@/assets/images/tailored-solution.jpg";
 
 const SERVICES = [
   {
@@ -42,7 +44,7 @@ const SERVICES = [
     description:
       "Maximize your revenue with our AdSense expertise. We integrate and optimize Google AdSense for your site, balancing profitability with user experience to deliver effective ad placements that earn without intrusion.",
     number: "05",
-    image: GrowImg.src,
+    image: AdSense.src,
     reversed: false,
   },
   {
@@ -50,8 +52,15 @@ const SERVICES = [
     description:
       "Your business challenges are unique, and so are our solutions. We offer tailored services that range from custom integrations to strategic consultations, ensuring every digital need is met with precision and innovation.",
     number: "06",
-    image: GrowImg.src,
+    image: Tailored.src,
     reversed: true,
+  },
+  {
+    title: "Manage and Growth",
+    description: `With Reset Digital's "Manage and Grow" service, your website's longevity and relevance are our top priorities. We offer a seamless blend of ongoing SEO optimization, proactive site maintenance, and regular content updates to ensure that your online presence not only keeps pace but sets the pace in an ever-evolving digital landscape. Our retention strategies are data-driven, crafted to engage and keep your audience coming back, while our commitment to security and performance updates means your website operates flawlessly around the clock. Embrace our enduring partnership for continuous digital success and growth.`,
+    number: "07",
+    image: GrowImg.src,
+    reversed: false,
   },
 ];
 

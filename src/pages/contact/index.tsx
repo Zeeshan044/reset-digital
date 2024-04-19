@@ -1,4 +1,5 @@
 import ContactImg from "@/assets/images/contact-page.png";
+import LoadingHOC from "@/components/hoc/loading-hoc";
 import Button from "@/components/ui/button";
 import DummyLoading from "@/components/ui/dummy-loading";
 import Image from "next/image";
@@ -6,7 +7,6 @@ import Image from "next/image";
 const ContactUs = () => {
   return (
     <div className="container-custom-xxl py-24">
-      <DummyLoading />
       <div className="md:bg-card md:py-16 md:px-10 ">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-8">
@@ -69,7 +69,7 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default LoadingHOC(ContactUs);
 
 type InputProps = {
   label: string;

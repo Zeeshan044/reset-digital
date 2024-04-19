@@ -6,12 +6,11 @@ import Reviews from "@/components/pages/reviews-section";
 import Skills from "@/components/pages/home/home-skills";
 import Faqs from "@/components/pages/faq-section";
 import CTASection from "@/components/pages/cta-section";
-import DummyLoading from "@/components/ui/dummy-loading";
+import LoadingHOC from "@/components/hoc/loading-hoc";
 
 const Home = () => {
   return (
     <div className="container-custom-xxl overflow-hidden">
-      <DummyLoading />
       <About />
       <Foundation />
       <HomeExpertise />
@@ -24,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LoadingHOC(Home);

@@ -1,12 +1,11 @@
+import LoadingHOC from "@/components/hoc/loading-hoc";
 import CTASection from "@/components/pages/cta-section";
 import ServiceSectionSlide from "@/components/pages/services/service-slide";
-import DummyLoading from "@/components/ui/dummy-loading";
 import SERVICES from "@/data/services";
 
 const Services = () => {
   return (
     <div className="container-custom-xxl">
-      <DummyLoading />
       {/* Hero Intro */}
       <section className="flex flex-col items-center justify-center py-20 p-section">
         <h1 className="text-7xl lg:text-9xl font-semibold text-center">
@@ -40,4 +39,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default LoadingHOC(Services);

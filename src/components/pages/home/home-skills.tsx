@@ -7,7 +7,7 @@ import fadeInMotion from "@/components/hoc/fade-in-motion";
 
 const Skills = () => {
   return (
-    <div className="p-section min-h-screen flex items-center">
+    <div className="p-section h-screen max-h-[1000px] flex items-center">
       <div className="grow">
         <div className="flex justify-between gap-x-8 flex-wrap-reverse gap-y-6">
           <div className="max-w-lg font-light">
