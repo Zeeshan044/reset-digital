@@ -41,12 +41,12 @@ const Links = [
 const Footer = () => {
   return (
     <div className="pt-20 p-section container-custom-xxl">
-      <div className="flex justify-between gap-8 md:gap-14">
-        <div className="max-w-sm shrink-0">
+      <div className="flex justify-between flex-wrap gap-8 md:gap-14">
+        <div className="sm:max-w-sm sm:shrink-0">
           <p className=" font-semibold text-base mb-[17px] dark:text-white">
             RESET DIGITAL
           </p>
-          <p className="text-xs font-light mb-3">
+          <p className="text-xs font-light mb-3 text-justify">
             A leading web consultancy firm specializing in exquisite website
             designs and impactful branding solutions since 2023, we are an
             innovative team committed to transforming your ideas into reality,
@@ -76,7 +76,7 @@ const Footer = () => {
             <Link href={"/contact"}>
               <Button className="w-full max-w-64">Book A Call</Button>
             </Link>
-            <p className="text-xs mt-4">
+            <p className="text-xs mt-4 text-justify">
               Ready to elevate your digital presence? Schedule a call with our
               experts to discuss your project and discover custom solutions
               tailored to your business needs.

@@ -1,13 +1,41 @@
 import ContactImg from "@/assets/images/contact-page.png";
 import LoadingHOC from "@/components/hoc/loading-hoc";
 import Button from "@/components/ui/button";
-import DummyLoading from "@/components/ui/dummy-loading";
 import Image from "next/image";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+
+    const res = await fetch("/api/mailer", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      res.json().then((data) => {
+        toast.success(data.message);
+      });
+    } else {
+      res.json().then((data) => {
+        toast.error(data.error);
+      });
+    }
+    setLoading(false);
+  };
   return (
     <div className="container-custom-xxl py-24">
-      <div className="md:bg-card md:py-16 md:px-10 ">
+      <div className="md:bg-card py-8 md:py-16 px-8 md:px-10 ">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col justify-center gap-y-4 mb-12">
@@ -30,7 +58,7 @@ const ContactUs = () => {
                 we can bring your digital vision to life
               </p>
             </div>
-            <form className="">
+            <form className="" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-8">
                 <Input label="Name" placeholder="Your Name" name="name" />
                 <Input
@@ -53,7 +81,12 @@ const ContactUs = () => {
                 as="textarea"
                 className="mt-8"
               />
-              <Button className="mt-8">Send Request</Button>
+              <Button className="mt-8">
+                {loading ? "Sending..." : "Send Request"}
+              </Button>
+              {/* <button className="relative font-bold text-xs py-3 px-5 hover:scale-105 duration-200 bg-primary text-primary-foreground mt-4">
+                Send Request
+              </button> */}
             </form>
           </div>
           <div className="hidden md:block">

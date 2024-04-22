@@ -31,7 +31,7 @@ const About = () => {
               interface we design, every line of code we write, and every
               digital strategy we implement
             </p>
-            <p className="mt-2">
+            <p className="mt-6">
               We are dedicated to your enduring success in the digital realm.
               Our focus on retention strategies is designed to ensure your
               website not only attracts but consistently engages and retains

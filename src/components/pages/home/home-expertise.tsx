@@ -29,7 +29,7 @@ const ExpertiseData = [
 
 const HomeExpertise = () => {
   return (
-    <div className="p-section py-20 h-screen max-h-[1000px] flex items-center">
+    <div className="p-section py-20 lg:h-screen lg:max-h-[1000px] flex items-center">
       <div className="flex flex-wrap xl:flex-nowrap gap-8 items-start">
         <div className="flex flex-col gap-8">
           <Heading

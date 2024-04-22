@@ -3,9 +3,10 @@ import AppNav from "@/components/layout/app-nav";
 import Layout from "@/components/layout/layout";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { ScrollerMotion } from "scroller-motion";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,14 +30,17 @@ export default function App({ Component, pageProps }: AppProps) {
     return <div className="bg-background fixed inset-0"></div>;
   }
   return (
-    <ScrollerMotion disabled={isMobile}>
-      <main className="min-h-screen bg-background">
-        <div>
-          <AppNav />
-          <Component {...pageProps} />
-          <Footer />
-        </div>
-      </main>
-    </ScrollerMotion>
+    <>
+      <ScrollerMotion disabled={isMobile}>
+        <main className="min-h-screen bg-background">
+          <div>
+            <AppNav />
+            <Component {...pageProps} />
+            <Footer />
+          </div>
+        </main>
+      </ScrollerMotion>
+      <ToastContainer />
+    </>
   );
 }
